@@ -1,4 +1,4 @@
-package chat.rocket.android.util.extension
+package chat.dk.android.util.extension
 
 /**
  * This purely checks if an url link ends with a image format.

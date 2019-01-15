@@ -1,4 +1,4 @@
-package chat.rocket.android.emoji
+package chat.dk.android.emoji
 
 import android.app.Dialog
 import android.content.Context
@@ -10,9 +10,9 @@ import android.widget.ImageView
 import androidx.annotation.ColorInt
 import androidx.core.content.ContextCompat
 import androidx.core.content.edit
-import chat.rocket.android.emoji.internal.EmojiCategory
-import chat.rocket.android.emoji.internal.EmojiPagerAdapter
-import chat.rocket.android.emoji.internal.PREF_EMOJI_SKIN_TONE
+import chat.dk.android.emoji.internal.EmojiCategory
+import chat.dk.android.emoji.internal.EmojiPagerAdapter
+import chat.dk.android.emoji.internal.PREF_EMOJI_SKIN_TONE
 import kotlinx.android.synthetic.main.emoji_picker.*
 import kotlinx.coroutines.experimental.android.UI
 import kotlinx.coroutines.experimental.launch

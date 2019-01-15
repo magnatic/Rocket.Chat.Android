@@ -1,12 +1,12 @@
-package chat.rocket.android.emoji.internal.db
+package chat.dk.android.emoji.internal.db
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import chat.rocket.android.emoji.Emoji
-import chat.rocket.android.emoji.EmojiDao
+import chat.dk.android.emoji.Emoji
+import chat.dk.android.emoji.EmojiDao
 
 @Database(entities = [Emoji::class], version = 1)
 @TypeConverters(StringListConverter::class)

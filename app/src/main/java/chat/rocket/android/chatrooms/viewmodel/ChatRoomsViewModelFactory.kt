@@ -1,11 +1,11 @@
-package chat.rocket.android.chatrooms.viewmodel
+package chat.dk.android.chatrooms.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import chat.rocket.android.chatrooms.adapter.RoomUiModelMapper
-import chat.rocket.android.chatrooms.domain.FetchChatRoomsInteractor
-import chat.rocket.android.chatrooms.infrastructure.ChatRoomsRepository
-import chat.rocket.android.server.infraestructure.ConnectionManager
+import chat.dk.android.chatrooms.adapter.RoomUiModelMapper
+import chat.dk.android.chatrooms.domain.FetchChatRoomsInteractor
+import chat.dk.android.chatrooms.infrastructure.ChatRoomsRepository
+import chat.dk.android.server.infraestructure.ConnectionManager
 import javax.inject.Inject
 
 class ChatRoomsViewModelFactory @Inject constructor(

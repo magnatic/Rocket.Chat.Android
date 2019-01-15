@@ -1,12 +1,11 @@
-package chat.rocket.android.authentication.twofactor.di
+package chat.dk.android.authentication.twofactor.di
 
-import chat.rocket.android.authentication.twofactor.ui.TwoFAFragment
-import chat.rocket.android.dagger.scope.PerFragment
+import chat.dk.android.authentication.twofactor.ui.TwoFAFragment
+import chat.dk.android.dagger.scope.PerFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
-@Module
-abstract class TwoFAFragmentProvider {
+@Module abstract class TwoFAFragmentProvider {
 
     @ContributesAndroidInjector(modules = [TwoFAFragmentModule::class])
     @PerFragment

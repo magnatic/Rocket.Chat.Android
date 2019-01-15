@@ -1,13 +1,13 @@
-package chat.rocket.android.dagger
+package chat.dk.android.dagger
 
 import android.app.Application
-import chat.rocket.android.app.RocketChatApplication
-import chat.rocket.android.chatroom.service.MessageService
-import chat.rocket.android.dagger.module.ActivityBuilder
-import chat.rocket.android.dagger.module.AndroidWorkerInjectionModule
-import chat.rocket.android.dagger.module.AppModule
-import chat.rocket.android.dagger.module.ReceiverBuilder
-import chat.rocket.android.dagger.module.ServiceBuilder
+import chat.dk.android.app.RocketChatApplication
+import chat.dk.android.chatroom.service.MessageService
+import chat.dk.android.dagger.module.ActivityBuilder
+import chat.dk.android.dagger.module.AndroidWorkerInjectionModule
+import chat.dk.android.dagger.module.AppModule
+import chat.dk.android.dagger.module.ReceiverBuilder
+import chat.dk.android.dagger.module.ServiceBuilder
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.support.AndroidSupportInjectionModule

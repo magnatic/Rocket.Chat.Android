@@ -1,45 +1,45 @@
-package chat.rocket.android.chatroom.presentation
+package chat.dk.android.chatroom.presentation
 
 import android.graphics.Bitmap
 import android.net.Uri
-import chat.rocket.android.R
-import chat.rocket.android.analytics.AnalyticsManager
-import chat.rocket.android.analytics.event.SubscriptionTypeEvent
-import chat.rocket.android.chatroom.adapter.AutoCompleteType
-import chat.rocket.android.chatroom.adapter.PEOPLE
-import chat.rocket.android.chatroom.adapter.ROOMS
-import chat.rocket.android.chatroom.domain.UriInteractor
-import chat.rocket.android.chatroom.uimodel.RoomUiModel
-import chat.rocket.android.chatroom.uimodel.UiModelMapper
-import chat.rocket.android.chatroom.uimodel.suggestion.ChatRoomSuggestionUiModel
-import chat.rocket.android.chatroom.uimodel.suggestion.CommandSuggestionUiModel
-import chat.rocket.android.chatroom.uimodel.suggestion.EmojiSuggestionUiModel
-import chat.rocket.android.chatroom.uimodel.suggestion.PeopleSuggestionUiModel
-import chat.rocket.android.chatrooms.adapter.RoomUiModelMapper
-import chat.rocket.android.core.behaviours.showMessage
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.db.DatabaseManager
-import chat.rocket.android.emoji.EmojiRepository
-import chat.rocket.android.helper.MessageHelper
-import chat.rocket.android.helper.UserHelper
-import chat.rocket.android.infrastructure.LocalRepository
-import chat.rocket.android.server.domain.GetCurrentServerInteractor
-import chat.rocket.android.server.domain.GetSettingsInteractor
-import chat.rocket.android.server.domain.JobSchedulerInteractor
-import chat.rocket.android.server.domain.MessagesRepository
-import chat.rocket.android.server.domain.PermissionsInteractor
-import chat.rocket.android.server.domain.PublicSettings
-import chat.rocket.android.server.domain.UsersRepository
-import chat.rocket.android.server.domain.uploadMaxFileSize
-import chat.rocket.android.server.domain.uploadMimeTypeFilter
-import chat.rocket.android.server.domain.useRealName
-import chat.rocket.android.server.infraestructure.ConnectionManagerFactory
-import chat.rocket.android.server.infraestructure.state
-import chat.rocket.android.util.extension.getByteArray
-import chat.rocket.android.util.extension.launchUI
-import chat.rocket.android.util.extensions.avatarUrl
-import chat.rocket.android.util.retryDB
-import chat.rocket.android.util.retryIO
+import chat.dk.android.R
+import chat.dk.android.analytics.AnalyticsManager
+import chat.dk.android.analytics.event.SubscriptionTypeEvent
+import chat.dk.android.chatroom.adapter.AutoCompleteType
+import chat.dk.android.chatroom.adapter.PEOPLE
+import chat.dk.android.chatroom.adapter.ROOMS
+import chat.dk.android.chatroom.domain.UriInteractor
+import chat.dk.android.chatroom.uimodel.RoomUiModel
+import chat.dk.android.chatroom.uimodel.UiModelMapper
+import chat.dk.android.chatroom.uimodel.suggestion.ChatRoomSuggestionUiModel
+import chat.dk.android.chatroom.uimodel.suggestion.CommandSuggestionUiModel
+import chat.dk.android.chatroom.uimodel.suggestion.EmojiSuggestionUiModel
+import chat.dk.android.chatroom.uimodel.suggestion.PeopleSuggestionUiModel
+import chat.dk.android.chatrooms.adapter.RoomUiModelMapper
+import chat.dk.android.core.behaviours.showMessage
+import chat.dk.android.core.lifecycle.CancelStrategy
+import chat.dk.android.db.DatabaseManager
+import chat.dk.android.emoji.EmojiRepository
+import chat.dk.android.helper.MessageHelper
+import chat.dk.android.helper.UserHelper
+import chat.dk.android.infrastructure.LocalRepository
+import chat.dk.android.server.domain.GetCurrentServerInteractor
+import chat.dk.android.server.domain.GetSettingsInteractor
+import chat.dk.android.server.domain.JobSchedulerInteractor
+import chat.dk.android.server.domain.MessagesRepository
+import chat.dk.android.server.domain.PermissionsInteractor
+import chat.dk.android.server.domain.PublicSettings
+import chat.dk.android.server.domain.UsersRepository
+import chat.dk.android.server.domain.uploadMaxFileSize
+import chat.dk.android.server.domain.uploadMimeTypeFilter
+import chat.dk.android.server.domain.useRealName
+import chat.dk.android.server.infraestructure.ConnectionManagerFactory
+import chat.dk.android.server.infraestructure.state
+import chat.dk.android.util.extension.getByteArray
+import chat.dk.android.util.extension.launchUI
+import chat.dk.android.util.extensions.avatarUrl
+import chat.dk.android.util.retryDB
+import chat.dk.android.util.retryIO
 import chat.rocket.common.RocketChatException
 import chat.rocket.common.model.RoomType
 import chat.rocket.common.model.SimpleUser
@@ -123,7 +123,6 @@ class ChatRoomPresenter @Inject constructor(
     private var lastState = manager.state
     private var typingStatusList = arrayListOf<String>()
     private val roomChangesChannel = Channel<Room>(Channel.CONFLATED)
-    private lateinit var draftKey: String
 
     fun setupChatRoom(
         roomId: String,
@@ -131,17 +130,14 @@ class ChatRoomPresenter @Inject constructor(
         roomType: String,
         chatRoomMessage: String? = null
     ) {
-        draftKey = "${currentServer}_${LocalRepository.DRAFT_KEY}$roomId"
-        chatRoomId = roomId
-        chatRoomType = roomType
         launch(CommonPool + strategy.jobs) {
             try {
+                chatRoomId = roomId
+                chatRoomType = roomType
                 chatRoles = if (roomTypeOf(roomType) !is RoomType.DirectMessage) {
                     client.chatRoomRoles(roomType = roomTypeOf(roomType), roomName = roomName)
-                } else {
-                    emptyList()
-                }
-            } catch (ex: Exception) {
+                } else emptyList()
+            } catch (ex: RocketChatException) {
                 Timber.e(ex)
                 chatRoles = emptyList()
             } finally {
@@ -187,6 +183,7 @@ class ChatRoomPresenter @Inject constructor(
                     }
                 }
             }
+
         }
     }
 
@@ -317,8 +314,8 @@ class ChatRoomPresenter @Inject constructor(
         launchUI(strategy) {
             try {
                 // ignore message for now, will receive it on the stream
+                val id = UUID.randomUUID().toString()
                 if (messageId == null) {
-                    val id = UUID.randomUUID().toString()
                     val username = userHelper.username()
                     val newMessage = Message(
                         id = id,
@@ -371,12 +368,12 @@ class ChatRoomPresenter @Inject constructor(
                 } else {
                     client.updateMessage(chatRoomId, messageId, text)
                 }
-                clearDraftMessage()
+
+                view.enableSendMessageButton()
             } catch (ex: Exception) {
-                Timber.e(ex, "Error sending message...")
+                Timber.d(ex, "Error sending message...")
                 jobSchedulerInteractor.scheduleSendingMessages()
             } finally {
-                view.clearMessageComposition(true)
                 view.enableSendMessageButton()
             }
         }
@@ -917,7 +914,7 @@ class ChatRoomPresenter @Inject constructor(
         navigator.toChatDetails(chatRoomId, chatRoomType, isSubscribed, isMenuDisabled)
     }
 
-    fun loadChatRoomsSuggestions() {
+    fun loadChatRooms() {
         launchUI(strategy) {
             try {
                 val chatRooms = getChatRoomsAsync()
@@ -1264,9 +1261,10 @@ class ChatRoomPresenter @Inject constructor(
         launchUI(strategy) {
             val viewModelStreamedMessage = mapper.map(
                 streamedMessage, RoomUiModel(
-                    roles = chatRoles, isBroadcast = chatIsBroadcast, isRoom = true
-                )
+                roles = chatRoles, isBroadcast = chatIsBroadcast, isRoom = true
             )
+            )
+
             val roomMessages = messagesRepository.getByRoomId(streamedMessage.roomId)
             val index = roomMessages.indexOfFirst { msg -> msg.id == streamedMessage.id }
             if (index > -1) {
@@ -1288,26 +1286,31 @@ class ChatRoomPresenter @Inject constructor(
     }
 
     /**
-     * Save unfinished message, when user left chat room without sending a message.
+     * Save unfinished message, when user left chat room without sending a message. It also clears
+     * saved message from local repository when unfinishedMessage is blank.
      *
+     * @param chatRoomId Chat room Id.
      * @param unfinishedMessage The unfinished message to save.
      */
-    fun saveDraftMessage(unfinishedMessage: String) {
+    fun saveUnfinishedMessage(chatRoomId: String, unfinishedMessage: String) {
+        val key = "${currentServer}_${LocalRepository.UNFINISHED_MSG_KEY}$chatRoomId"
         if (unfinishedMessage.isNotBlank()) {
-            localRepository.save(draftKey, unfinishedMessage)
+            localRepository.save(key, unfinishedMessage)
+        } else {
+            localRepository.clear(key)
         }
     }
 
-    fun clearDraftMessage() {
-        localRepository.clear(draftKey)
-    }
     /**
      * Get unfinished message from local repository, when user left chat room without
      * sending a message and now the user is back.
      *
-     * @return Returns the unfinished message, null otherwise.
+     * @param chatRoomId Chat room Id.
+     *
+     * @return Returns the unfinished message.
      */
-    fun getDraftUnfinishedMessage(): String? {
-        return localRepository.get(draftKey)
+    fun getUnfinishedMessage(chatRoomId: String): String {
+        val key = "${currentServer}_${LocalRepository.UNFINISHED_MSG_KEY}$chatRoomId"
+        return localRepository.get(key) ?: ""
     }
 }

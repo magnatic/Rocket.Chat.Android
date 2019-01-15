@@ -1,9 +1,9 @@
-package chat.rocket.android.authentication.loginoptions.di
+package chat.dk.android.authentication.loginoptions.di
 
 import androidx.lifecycle.LifecycleOwner
-import chat.rocket.android.authentication.loginoptions.presentation.LoginOptionsView
-import chat.rocket.android.authentication.loginoptions.ui.LoginOptionsFragment
-import chat.rocket.android.dagger.scope.PerFragment
+import chat.dk.android.authentication.loginoptions.presentation.LoginOptionsView
+import chat.dk.android.authentication.loginoptions.ui.LoginOptionsFragment
+import chat.dk.android.dagger.scope.PerFragment
 import dagger.Module
 import dagger.Provides
 

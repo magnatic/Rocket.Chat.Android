@@ -1,4 +1,4 @@
-package chat.rocket.android.server.domain
+package chat.dk.android.server.domain
 
 interface TokenRepository : chat.rocket.core.TokenRepository {
     fun remove(url: String)

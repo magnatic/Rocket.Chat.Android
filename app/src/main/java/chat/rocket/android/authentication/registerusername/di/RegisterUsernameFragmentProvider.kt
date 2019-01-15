@@ -1,7 +1,7 @@
-package chat.rocket.android.authentication.registerusername.di
+package chat.dk.android.authentication.registerusername.di
 
-import chat.rocket.android.authentication.registerusername.ui.RegisterUsernameFragment
-import chat.rocket.android.dagger.scope.PerFragment
+import chat.dk.android.authentication.registerusername.ui.RegisterUsernameFragment
+import chat.dk.android.dagger.scope.PerFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

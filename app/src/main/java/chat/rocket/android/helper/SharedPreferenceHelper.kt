@@ -1,8 +1,8 @@
-package chat.rocket.android.helper
+package chat.dk.android.helper
 
 import android.content.SharedPreferences
 import android.preference.PreferenceManager
-import chat.rocket.android.app.RocketChatApplication
+import chat.dk.android.app.RocketChatApplication
 
 object SharedPreferenceHelper {
     private var sharedPreferences: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(RocketChatApplication.getAppContext())

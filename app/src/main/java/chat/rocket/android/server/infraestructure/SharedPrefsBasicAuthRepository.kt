@@ -1,9 +1,9 @@
-package chat.rocket.android.server.infraestructure
+package chat.dk.android.server.infraestructure
 
 import android.content.SharedPreferences
 import androidx.core.content.edit
-import chat.rocket.android.server.domain.BasicAuthRepository
-import chat.rocket.android.server.domain.model.BasicAuth
+import chat.dk.android.server.domain.BasicAuthRepository
+import chat.dk.android.server.domain.model.BasicAuth
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.Types
 

@@ -1,10 +1,10 @@
-package chat.rocket.android.authentication.di
+package chat.dk.android.authentication.di
 
 import androidx.lifecycle.LifecycleOwner
-import chat.rocket.android.authentication.presentation.AuthenticationNavigator
-import chat.rocket.android.authentication.ui.AuthenticationActivity
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.dagger.scope.PerActivity
+import chat.dk.android.authentication.presentation.AuthenticationNavigator
+import chat.dk.android.authentication.ui.AuthenticationActivity
+import chat.dk.android.core.lifecycle.CancelStrategy
+import chat.dk.android.dagger.scope.PerActivity
 import dagger.Module
 import dagger.Provides
 import kotlinx.coroutines.experimental.Job

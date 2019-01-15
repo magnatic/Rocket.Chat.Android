@@ -1,7 +1,7 @@
-package chat.rocket.android.favoritemessages.di
+package chat.dk.android.favoritemessages.di
 
-import chat.rocket.android.dagger.scope.PerFragment
-import chat.rocket.android.favoritemessages.ui.FavoriteMessagesFragment
+import chat.dk.android.dagger.scope.PerFragment
+import chat.dk.android.favoritemessages.ui.FavoriteMessagesFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

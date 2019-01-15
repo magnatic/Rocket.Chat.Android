@@ -1,4 +1,4 @@
-package chat.rocket.android.util.extensions
+package chat.dk.android.util.extensions
 
 
 inline fun CharSequence?.ifNotNullNorEmpty(block: (CharSequence) -> Unit) {

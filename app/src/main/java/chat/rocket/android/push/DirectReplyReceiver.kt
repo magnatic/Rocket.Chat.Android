@@ -1,4 +1,4 @@
-package chat.rocket.android.push
+package chat.dk.android.push
 
 import android.app.NotificationManager
 import android.content.BroadcastReceiver
@@ -6,8 +6,8 @@ import android.content.Context
 import android.content.Intent
 import androidx.core.app.RemoteInput
 import android.widget.Toast
-import chat.rocket.android.R
-import chat.rocket.android.server.infraestructure.ConnectionManagerFactory
+import chat.dk.android.R
+import chat.dk.android.server.infraestructure.ConnectionManagerFactory
 import chat.rocket.common.RocketChatException
 import chat.rocket.core.internal.rest.sendMessage
 import dagger.android.AndroidInjection

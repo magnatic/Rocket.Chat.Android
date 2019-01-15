@@ -1,4 +1,4 @@
-package chat.rocket.android.draw.main.ui
+package chat.dk.android.draw.main.ui
 
 import android.app.Activity
 import android.content.Intent
@@ -9,15 +9,15 @@ import android.widget.SeekBar
 import android.widget.Toast
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.isVisible
-import chat.rocket.android.draw.R
-import chat.rocket.android.draw.main.presenter.DrawPresenter
-import chat.rocket.android.draw.main.presenter.DrawView
+import chat.dk.android.draw.R
+import chat.dk.android.draw.main.presenter.DrawPresenter
+import chat.dk.android.draw.main.presenter.DrawView
 import dagger.android.support.DaggerAppCompatActivity
 import kotlinx.android.synthetic.main.activity_drawing.*
 import kotlinx.android.synthetic.main.color_palette_view.*
 import javax.inject.Inject
 
-const val DRAWING_BYTE_ARRAY_EXTRA_DATA: String = "chat.rocket.android.DrawingByteArray"
+const val DRAWING_BYTE_ARRAY_EXTRA_DATA: String = "chat.dk.android.DrawingByteArray"
 
 class DrawingActivity : DaggerAppCompatActivity(), DrawView {
     @Inject

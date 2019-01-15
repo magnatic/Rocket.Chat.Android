@@ -1,4 +1,4 @@
-package chat.rocket.android.webview.sso.ui
+package chat.dk.android.webview.sso.ui
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.webkit.CookieManager
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import chat.rocket.android.R
+import chat.dk.android.R
 import kotlinx.android.synthetic.main.activity_web_view.*
 import kotlinx.android.synthetic.main.app_bar.*
 

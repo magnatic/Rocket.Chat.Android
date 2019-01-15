@@ -1,6 +1,6 @@
-package chat.rocket.android.chatroom.uimodel
+package chat.dk.android.chatroom.uimodel
 
-import chat.rocket.android.R
+import chat.dk.android.R
 import chat.rocket.core.model.Message
 import chat.rocket.core.model.url.Url
 

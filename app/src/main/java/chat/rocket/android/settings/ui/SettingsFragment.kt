@@ -1,4 +1,4 @@
-package chat.rocket.android.settings.ui
+package chat.dk.android.settings.ui
 
 import android.content.ActivityNotFoundException
 import android.content.Intent
@@ -10,20 +10,20 @@ import android.widget.AdapterView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.net.toUri
 import androidx.fragment.app.Fragment
-import chat.rocket.android.R
-import chat.rocket.android.about.ui.AboutFragment
-import chat.rocket.android.about.ui.TAG_ABOUT_FRAGMENT
-import chat.rocket.android.analytics.AnalyticsManager
-import chat.rocket.android.analytics.event.ScreenViewEvent
-import chat.rocket.android.helper.TextHelper.getDeviceAndAppInformation
-import chat.rocket.android.main.ui.MainActivity
-import chat.rocket.android.preferences.ui.PreferencesFragment
-import chat.rocket.android.preferences.ui.TAG_PREFERENCES_FRAGMENT
-import chat.rocket.android.settings.password.ui.PasswordActivity
-import chat.rocket.android.settings.presentation.SettingsView
-import chat.rocket.android.util.extensions.addFragmentBackStack
-import chat.rocket.android.util.extensions.inflate
-import chat.rocket.android.webview.ui.webViewIntent
+import chat.dk.android.R
+import chat.dk.android.about.ui.AboutFragment
+import chat.dk.android.about.ui.TAG_ABOUT_FRAGMENT
+import chat.dk.android.analytics.AnalyticsManager
+import chat.dk.android.analytics.event.ScreenViewEvent
+import chat.dk.android.helper.TextHelper.getDeviceAndAppInformation
+import chat.dk.android.main.ui.MainActivity
+import chat.dk.android.preferences.ui.PreferencesFragment
+import chat.dk.android.preferences.ui.TAG_PREFERENCES_FRAGMENT
+import chat.dk.android.settings.password.ui.PasswordActivity
+import chat.dk.android.settings.presentation.SettingsView
+import chat.dk.android.util.extensions.addFragmentBackStack
+import chat.dk.android.util.extensions.inflate
+import chat.dk.android.webview.ui.webViewIntent
 import dagger.android.support.AndroidSupportInjection
 import kotlinx.android.synthetic.main.fragment_settings.*
 import timber.log.Timber
@@ -126,7 +126,7 @@ class SettingsFragment : Fragment(), SettingsView, AdapterView.OnItemClickListen
     private fun contactSupport() {
         with(Intent(Intent.ACTION_SEND)) {
             type = "message/rfc822"
-            putExtra(Intent.EXTRA_EMAIL, arrayOf("support@rocket.chat"))
+            putExtra(Intent.EXTRA_EMAIL, arrayOf("apps@domkihot.ru"))
             putExtra(Intent.EXTRA_SUBJECT, getString(R.string.msg_android_app_support))
             putExtra(Intent.EXTRA_TEXT, getDeviceAndAppInformation())
             try {

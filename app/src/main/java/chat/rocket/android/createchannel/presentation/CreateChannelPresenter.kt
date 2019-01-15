@@ -1,11 +1,11 @@
-package chat.rocket.android.createchannel.presentation
+package chat.dk.android.createchannel.presentation
 
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.main.presentation.MainNavigator
-import chat.rocket.android.members.uimodel.MemberUiModelMapper
-import chat.rocket.android.server.domain.GetCurrentServerInteractor
-import chat.rocket.android.server.infraestructure.RocketChatClientFactory
-import chat.rocket.android.util.extension.launchUI
+import chat.dk.android.core.lifecycle.CancelStrategy
+import chat.dk.android.main.presentation.MainNavigator
+import chat.dk.android.members.uimodel.MemberUiModelMapper
+import chat.dk.android.server.domain.GetCurrentServerInteractor
+import chat.dk.android.server.infraestructure.RocketChatClientFactory
+import chat.dk.android.util.extension.launchUI
 import chat.rocket.common.RocketChatException
 import chat.rocket.common.model.RoomType
 import chat.rocket.common.util.ifNull

@@ -1,10 +1,10 @@
-package chat.rocket.android.server.infraestructure
+package chat.dk.android.server.infraestructure
 
-import chat.rocket.android.db.DatabaseManager
-import chat.rocket.android.db.Operation
-import chat.rocket.android.db.model.MessagesSync
-import chat.rocket.android.server.domain.MessagesRepository
-import chat.rocket.android.util.retryDB
+import chat.dk.android.db.DatabaseManager
+import chat.dk.android.db.Operation
+import chat.dk.android.db.model.MessagesSync
+import chat.dk.android.server.domain.MessagesRepository
+import chat.dk.android.util.retryDB
 import chat.rocket.core.model.Message
 import kotlinx.coroutines.experimental.CommonPool
 import kotlinx.coroutines.experimental.withContext

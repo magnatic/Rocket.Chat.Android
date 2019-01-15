@@ -1,4 +1,4 @@
-package chat.rocket.android.util
+package chat.dk.android.util
 
 import android.database.sqlite.SQLiteDatabaseLockedException
 import chat.rocket.common.RocketChatNetworkErrorException

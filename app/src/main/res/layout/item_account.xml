@@ -11,8 +11,9 @@
 
     <com.facebook.drawee.view.SimpleDraweeView
         android:id="@+id/server_logo"
-        android:layout_width="40dp"
+        android:layout_width="0dp"
         android:layout_height="40dp"
+        android:visibility="invisible"
         app:actualImageScaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

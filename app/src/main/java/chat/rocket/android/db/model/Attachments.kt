@@ -1,4 +1,4 @@
-package chat.rocket.android.db.model
+package chat.dk.android.db.model
 
 import android.content.Context
 import androidx.room.ColumnInfo
@@ -6,9 +6,9 @@ import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.Index
 import androidx.room.PrimaryKey
-import chat.rocket.android.R
-import chat.rocket.android.util.extension.orFalse
-import chat.rocket.android.util.extensions.isNotNullNorEmpty
+import chat.dk.android.R
+import chat.dk.android.util.extension.orFalse
+import chat.dk.android.util.extensions.isNotNullNorEmpty
 import chat.rocket.core.model.attachment.Attachment
 import chat.rocket.core.model.attachment.actions.ButtonAction
 

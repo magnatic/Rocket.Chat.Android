@@ -1,7 +1,7 @@
-package chat.rocket.android.chatrooms.di
+package chat.dk.android.chatrooms.di
 
-import chat.rocket.android.chatrooms.ui.ChatRoomsFragment
-import chat.rocket.android.dagger.scope.PerFragment
+import chat.dk.android.chatrooms.ui.ChatRoomsFragment
+import chat.dk.android.dagger.scope.PerFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

@@ -1,12 +1,12 @@
-package chat.rocket.android.chatroom.ui
+package chat.dk.android.chatroom.ui
 
 import android.graphics.Bitmap
 import android.graphics.drawable.Drawable
 import android.net.Uri
 import androidx.core.view.isVisible
-import chat.rocket.android.emoji.internal.GlideApp
-import chat.rocket.android.util.extensions.getFileName
-import chat.rocket.android.util.extensions.getMimeType
+import chat.dk.android.emoji.internal.GlideApp
+import chat.dk.android.util.extensions.getFileName
+import chat.dk.android.util.extensions.getMimeType
 import chat.rocket.common.util.ifNull
 import com.bumptech.glide.request.target.SimpleTarget
 import com.bumptech.glide.request.transition.Transition
@@ -75,10 +75,10 @@ fun ChatRoomFragment.showFileAttachmentDialog(uri: Uri) {
                 (citation ?: "") + description.text.toString()
             )
         }
-        alertDialog?.dismiss()
+        alertDialog.dismiss()
     }
-    cancelButton.setOnClickListener { alertDialog?.dismiss() }
-    alertDialog?.show()
+    cancelButton.setOnClickListener { alertDialog.dismiss() }
+    alertDialog.show()
 }
 
 fun ChatRoomFragment.showDrawAttachmentDialog(byteArray: ByteArray) {
@@ -92,9 +92,9 @@ fun ChatRoomFragment.showDrawAttachmentDialog(byteArray: ByteArray) {
             byteArray,
             (citation ?: "") + description.text.toString()
         )
-        alertDialog?.dismiss()
+        alertDialog.dismiss()
     }
 
-    cancelButton.setOnClickListener { alertDialog?.dismiss() }
-    alertDialog?.show()
+    cancelButton.setOnClickListener { alertDialog.dismiss() }
+    alertDialog.show()
 }

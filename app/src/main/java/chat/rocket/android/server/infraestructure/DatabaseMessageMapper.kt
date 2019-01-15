@@ -1,13 +1,13 @@
-package chat.rocket.android.server.infraestructure
+package chat.dk.android.server.infraestructure
 
-import chat.rocket.android.db.DatabaseManager
-import chat.rocket.android.db.model.AttachmentActionEntity
-import chat.rocket.android.db.model.AttachmentEntity
-import chat.rocket.android.db.model.FullMessage
-import chat.rocket.android.db.model.ReactionEntity
-import chat.rocket.android.db.model.UrlEntity
-import chat.rocket.android.db.model.UserEntity
-import chat.rocket.android.util.retryDB
+import chat.dk.android.db.DatabaseManager
+import chat.dk.android.db.model.AttachmentActionEntity
+import chat.dk.android.db.model.AttachmentEntity
+import chat.dk.android.db.model.FullMessage
+import chat.dk.android.db.model.ReactionEntity
+import chat.dk.android.db.model.UrlEntity
+import chat.dk.android.db.model.UserEntity
+import chat.dk.android.util.retryDB
 import chat.rocket.common.model.SimpleRoom
 import chat.rocket.common.model.SimpleUser
 import chat.rocket.core.model.Message

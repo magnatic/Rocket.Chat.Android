@@ -1,7 +1,7 @@
-package chat.rocket.android.authentication.server.presentation
+package chat.dk.android.authentication.server.presentation
 
-import chat.rocket.android.core.behaviours.LoadingView
-import chat.rocket.android.core.behaviours.MessageView
+import chat.dk.android.core.behaviours.LoadingView
+import chat.dk.android.core.behaviours.MessageView
 
 interface ServerView : LoadingView, MessageView, VersionCheckView {
 

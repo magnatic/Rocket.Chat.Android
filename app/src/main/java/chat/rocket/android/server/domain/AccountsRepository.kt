@@ -1,6 +1,6 @@
-package chat.rocket.android.server.domain
+package chat.dk.android.server.domain
 
-import chat.rocket.android.server.domain.model.Account
+import chat.dk.android.server.domain.model.Account
 
 interface AccountsRepository {
     fun save(account: Account)

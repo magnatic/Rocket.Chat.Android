@@ -1,15 +1,15 @@
-package chat.rocket.android.authentication.presentation
+package chat.dk.android.authentication.presentation
 
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.infrastructure.LocalRepository
-import chat.rocket.android.server.domain.GetAccountInteractor
-import chat.rocket.android.server.domain.GetConnectingServerInteractor
-import chat.rocket.android.server.domain.GetCurrentServerInteractor
-import chat.rocket.android.server.domain.SettingsRepository
-import chat.rocket.android.server.domain.TokenRepository
-import chat.rocket.android.util.extension.launchUI
-import chat.rocket.android.util.extensions.privacyPolicyUrl
-import chat.rocket.android.util.extensions.termsOfServiceUrl
+import chat.dk.android.core.lifecycle.CancelStrategy
+import chat.dk.android.infrastructure.LocalRepository
+import chat.dk.android.server.domain.GetAccountInteractor
+import chat.dk.android.server.domain.GetConnectingServerInteractor
+import chat.dk.android.server.domain.GetCurrentServerInteractor
+import chat.dk.android.server.domain.SettingsRepository
+import chat.dk.android.server.domain.TokenRepository
+import chat.dk.android.util.extension.launchUI
+import chat.dk.android.util.extensions.privacyPolicyUrl
+import chat.dk.android.util.extensions.termsOfServiceUrl
 import javax.inject.Inject
 
 class AuthenticationPresenter @Inject constructor(

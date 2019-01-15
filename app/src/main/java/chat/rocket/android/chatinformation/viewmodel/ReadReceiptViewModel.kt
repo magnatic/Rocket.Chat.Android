@@ -1,4 +1,4 @@
-package chat.rocket.android.chatinformation.viewmodel
+package chat.dk.android.chatinformation.viewmodel
 
 data class ReadReceiptViewModel(
     val avatar: String,

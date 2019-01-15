@@ -1,8 +1,8 @@
-package chat.rocket.android.main.adapter
+package chat.dk.android.main.adapter
 
 import androidx.recyclerview.widget.RecyclerView
 import android.view.View
-import chat.rocket.android.server.domain.model.Account
+import chat.dk.android.server.domain.model.Account
 import kotlinx.android.synthetic.main.item_account.view.*
 
 class AccountViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

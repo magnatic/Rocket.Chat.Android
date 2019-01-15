@@ -1,13 +1,13 @@
-package chat.rocket.android.chatinformation.ui
+package chat.dk.android.chatinformation.ui
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import chat.rocket.android.R
-import chat.rocket.android.util.extensions.addFragment
-import chat.rocket.android.util.extensions.textContent
+import chat.dk.android.R
+import chat.dk.android.util.extensions.addFragment
+import chat.dk.android.util.extensions.textContent
 import dagger.android.AndroidInjection
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector

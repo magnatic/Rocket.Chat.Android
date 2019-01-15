@@ -1,6 +1,6 @@
-package chat.rocket.android.server.domain
+package chat.dk.android.server.domain
 
-import chat.rocket.android.helper.UserHelper
+import chat.dk.android.helper.UserHelper
 import javax.inject.Inject
 
 // Creating rooms

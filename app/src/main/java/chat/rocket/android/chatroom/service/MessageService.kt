@@ -1,12 +1,12 @@
-package chat.rocket.android.chatroom.service
+package chat.dk.android.chatroom.service
 
 import android.app.job.JobParameters
 import android.app.job.JobService
-import chat.rocket.android.db.DatabaseManagerFactory
-import chat.rocket.android.server.domain.GetAccountsInteractor
-import chat.rocket.android.server.infraestructure.ConnectionManagerFactory
-import chat.rocket.android.server.infraestructure.DatabaseMessageMapper
-import chat.rocket.android.server.infraestructure.DatabaseMessagesRepository
+import chat.dk.android.db.DatabaseManagerFactory
+import chat.dk.android.server.domain.GetAccountsInteractor
+import chat.dk.android.server.infraestructure.ConnectionManagerFactory
+import chat.dk.android.server.infraestructure.DatabaseMessageMapper
+import chat.dk.android.server.infraestructure.DatabaseMessagesRepository
 import chat.rocket.core.internal.rest.sendMessage
 import chat.rocket.core.model.Message
 import dagger.android.AndroidInjection

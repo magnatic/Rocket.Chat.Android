@@ -1,10 +1,10 @@
-package chat.rocket.android.main.presentation
+package chat.dk.android.main.presentation
 
-import chat.rocket.android.authentication.server.presentation.VersionCheckView
-import chat.rocket.android.core.behaviours.MessageView
-import chat.rocket.android.main.uimodel.NavHeaderUiModel
-import chat.rocket.android.server.domain.model.Account
-import chat.rocket.android.server.presentation.TokenView
+import chat.dk.android.authentication.server.presentation.VersionCheckView
+import chat.dk.android.core.behaviours.MessageView
+import chat.dk.android.main.uimodel.NavHeaderUiModel
+import chat.dk.android.server.domain.model.Account
+import chat.dk.android.server.presentation.TokenView
 import chat.rocket.common.model.UserStatus
 
 interface MainView : MessageView, VersionCheckView, TokenView {

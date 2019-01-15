@@ -1,7 +1,7 @@
-package chat.rocket.android.dagger.module
+package chat.dk.android.dagger.module
 
-import chat.rocket.android.chatroom.di.MessageServiceProvider
-import chat.rocket.android.chatroom.service.MessageService
+import chat.dk.android.chatroom.di.MessageServiceProvider
+import chat.dk.android.chatroom.service.MessageService
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

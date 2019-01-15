@@ -1,6 +1,6 @@
-package chat.rocket.android.settings.di
+package chat.dk.android.settings.di
 
-import chat.rocket.android.settings.ui.SettingsFragment
+import chat.dk.android.settings.ui.SettingsFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

@@ -1,11 +1,11 @@
-package chat.rocket.android.chatdetails.viewmodel
+package chat.dk.android.chatdetails.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
-import chat.rocket.android.chatdetails.domain.ChatDetails
-import chat.rocket.android.db.ChatRoomDao
+import chat.dk.android.chatdetails.domain.ChatDetails
+import chat.dk.android.db.ChatRoomDao
 
 class ChatDetailsViewModel(private val chatRoomDao: ChatRoomDao): ViewModel() {
 

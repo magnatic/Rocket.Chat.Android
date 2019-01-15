@@ -1,4 +1,4 @@
-package chat.rocket.android.core.behaviours
+package chat.dk.android.core.behaviours
 
 import androidx.annotation.StringRes
 import chat.rocket.common.util.ifNull

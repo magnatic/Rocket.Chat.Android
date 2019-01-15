@@ -1,7 +1,7 @@
-package chat.rocket.android.server.infraestructure
+package chat.dk.android.server.infraestructure
 
 import android.content.SharedPreferences
-import chat.rocket.android.server.domain.CurrentServerRepository
+import chat.dk.android.server.domain.CurrentServerRepository
 
 class SharedPrefsCurrentServerRepository(private val preferences: SharedPreferences) : CurrentServerRepository {
 

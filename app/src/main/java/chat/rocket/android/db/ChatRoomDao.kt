@@ -1,4 +1,4 @@
-package chat.rocket.android.db
+package chat.dk.android.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
@@ -7,8 +7,8 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Transaction
 import androidx.room.Update
-import chat.rocket.android.db.model.ChatRoom
-import chat.rocket.android.db.model.ChatRoomEntity
+import chat.dk.android.db.model.ChatRoom
+import chat.dk.android.db.model.ChatRoomEntity
 
 @Dao
 abstract class ChatRoomDao : BaseDao<ChatRoomEntity> {

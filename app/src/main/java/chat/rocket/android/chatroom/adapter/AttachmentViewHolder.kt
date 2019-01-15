@@ -1,4 +1,4 @@
-package chat.rocket.android.chatroom.adapter
+package chat.dk.android.chatroom.adapter
 
 import android.animation.ValueAnimator
 import android.content.Intent
@@ -10,15 +10,15 @@ import androidx.core.net.toUri
 import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
-import chat.rocket.android.R
-import chat.rocket.android.chatroom.uimodel.AttachmentUiModel
-import chat.rocket.android.emoji.EmojiReactionListener
-import chat.rocket.android.helper.ImageHelper
-import chat.rocket.android.player.PlayerActivity
-import chat.rocket.android.util.extensions.content
-import chat.rocket.android.util.extensions.isVisible
-import chat.rocket.android.util.extensions.openTabbedUrl
-import chat.rocket.android.util.extensions.setOnClickListener
+import chat.dk.android.R
+import chat.dk.android.chatroom.uimodel.AttachmentUiModel
+import chat.dk.android.emoji.EmojiReactionListener
+import chat.dk.android.helper.ImageHelper
+import chat.dk.android.player.PlayerActivity
+import chat.dk.android.util.extensions.content
+import chat.dk.android.util.extensions.isVisible
+import chat.dk.android.util.extensions.openTabbedUrl
+import chat.dk.android.util.extensions.setOnClickListener
 import chat.rocket.core.model.attachment.actions.Action
 import com.facebook.drawee.backends.pipeline.Fresco
 import kotlinx.android.synthetic.main.item_message_attachment.view.*

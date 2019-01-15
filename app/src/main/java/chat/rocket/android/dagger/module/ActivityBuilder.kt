@@ -1,49 +1,51 @@
-package chat.rocket.android.dagger.module
+package chat.dk.android.dagger.module
 
-import chat.rocket.android.about.di.AboutFragmentProvider
-import chat.rocket.android.authentication.di.AuthenticationModule
-import chat.rocket.android.authentication.login.di.LoginFragmentProvider
-import chat.rocket.android.authentication.loginoptions.di.LoginOptionsFragmentProvider
-import chat.rocket.android.authentication.onboarding.di.OnBoardingFragmentProvider
-import chat.rocket.android.authentication.registerusername.di.RegisterUsernameFragmentProvider
-import chat.rocket.android.authentication.resetpassword.di.ResetPasswordFragmentProvider
-import chat.rocket.android.authentication.server.di.ServerFragmentProvider
-import chat.rocket.android.authentication.signup.di.SignupFragmentProvider
-import chat.rocket.android.authentication.twofactor.di.TwoFAFragmentProvider
-import chat.rocket.android.authentication.ui.AuthenticationActivity
-import chat.rocket.android.chatdetails.di.ChatDetailsFragmentProvider
-import chat.rocket.android.chatinformation.di.MessageInfoFragmentProvider
-import chat.rocket.android.chatinformation.ui.MessageInfoActivity
-import chat.rocket.android.chatroom.di.ChatRoomFragmentProvider
-import chat.rocket.android.chatroom.di.ChatRoomModule
-import chat.rocket.android.chatroom.ui.ChatRoomActivity
-import chat.rocket.android.chatrooms.di.ChatRoomsFragmentProvider
-import chat.rocket.android.createchannel.di.CreateChannelProvider
-import chat.rocket.android.dagger.scope.PerActivity
-import chat.rocket.android.draw.main.di.DrawModule
-import chat.rocket.android.draw.main.ui.DrawingActivity
-import chat.rocket.android.favoritemessages.di.FavoriteMessagesFragmentProvider
-import chat.rocket.android.files.di.FilesFragmentProvider
-import chat.rocket.android.main.di.MainModule
-import chat.rocket.android.main.ui.MainActivity
-import chat.rocket.android.members.di.MembersFragmentProvider
-import chat.rocket.android.mentions.di.MentionsFragmentProvider
-import chat.rocket.android.pinnedmessages.di.PinnedMessagesFragmentProvider
-import chat.rocket.android.preferences.di.PreferencesFragmentProvider
-import chat.rocket.android.profile.di.ProfileFragmentProvider
-import chat.rocket.android.server.di.ChangeServerModule
-import chat.rocket.android.server.ui.ChangeServerActivity
-import chat.rocket.android.settings.di.SettingsFragmentProvider
-import chat.rocket.android.settings.password.di.PasswordFragmentProvider
-import chat.rocket.android.settings.password.ui.PasswordActivity
-import chat.rocket.android.userdetails.di.UserDetailsFragmentProvider
-import chat.rocket.android.webview.adminpanel.di.AdminPanelWebViewFragmentProvider
+import chat.dk.android.about.di.AboutFragmentProvider
+import chat.dk.android.authentication.di.AuthenticationModule
+import chat.dk.android.authentication.login.di.LoginFragmentProvider
+import chat.dk.android.authentication.loginoptions.di.LoginOptionsFragmentProvider
+import chat.dk.android.authentication.onboarding.di.OnBoardingFragmentProvider
+import chat.dk.android.authentication.registerusername.di.RegisterUsernameFragmentProvider
+import chat.dk.android.authentication.resetpassword.di.ResetPasswordFragmentProvider
+import chat.dk.android.authentication.server.di.ServerFragmentProvider
+import chat.dk.android.authentication.signup.di.SignupFragmentProvider
+import chat.dk.android.authentication.twofactor.di.TwoFAFragmentProvider
+import chat.dk.android.authentication.ui.AuthenticationActivity
+import chat.dk.android.chatdetails.di.ChatDetailsFragmentProvider
+import chat.dk.android.chatdetails.di.ChatDetailsModule
+import chat.dk.android.chatdetails.ui.ChatDetailsActivity
+import chat.dk.android.chatinformation.di.MessageInfoFragmentProvider
+import chat.dk.android.chatinformation.ui.MessageInfoActivity
+import chat.dk.android.chatroom.di.ChatRoomFragmentProvider
+import chat.dk.android.chatroom.di.ChatRoomModule
+import chat.dk.android.chatroom.ui.ChatRoomActivity
+import chat.dk.android.chatrooms.di.ChatRoomsFragmentProvider
+import chat.dk.android.createchannel.di.CreateChannelProvider
+import chat.dk.android.dagger.scope.PerActivity
+import chat.dk.android.draw.main.di.DrawModule
+import chat.dk.android.draw.main.ui.DrawingActivity
+import chat.dk.android.favoritemessages.di.FavoriteMessagesFragmentProvider
+import chat.dk.android.files.di.FilesFragmentProvider
+import chat.dk.android.main.di.MainModule
+import chat.dk.android.main.ui.MainActivity
+import chat.dk.android.members.di.MembersFragmentProvider
+import chat.dk.android.mentions.di.MentionsFragmentProvider
+import chat.dk.android.pinnedmessages.di.PinnedMessagesFragmentProvider
+import chat.dk.android.preferences.di.PreferencesFragmentProvider
+import chat.dk.android.profile.di.ProfileFragmentProvider
+import chat.dk.android.server.di.ChangeServerModule
+import chat.dk.android.server.ui.ChangeServerActivity
+import chat.dk.android.settings.di.SettingsFragmentProvider
+import chat.dk.android.settings.password.di.PasswordFragmentProvider
+import chat.dk.android.settings.password.ui.PasswordActivity
+import chat.dk.android.userdetails.di.UserDetailsModule
+import chat.dk.android.userdetails.ui.UserDetailsActivity
+import chat.dk.android.webview.adminpanel.di.AdminPanelWebViewFragmentProvider
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
 @Module
 abstract class ActivityBuilder {
-
     @PerActivity
     @ContributesAndroidInjector(
         modules = [AuthenticationModule::class,
@@ -75,9 +77,17 @@ abstract class ActivityBuilder {
 
     @PerActivity
     @ContributesAndroidInjector(
-        modules = [ChatRoomModule::class,
-            ChatRoomFragmentProvider::class,
-            UserDetailsFragmentProvider::class,
+        modules = [
+            ChatRoomModule::class,
+            ChatRoomFragmentProvider::class
+        ]
+    )
+    abstract fun bindChatRoomActivity(): ChatRoomActivity
+
+    @PerActivity
+    @ContributesAndroidInjector(
+        modules = [
+            ChatDetailsModule::class,
             ChatDetailsFragmentProvider::class,
             MembersFragmentProvider::class,
             MentionsFragmentProvider::class,
@@ -86,7 +96,7 @@ abstract class ActivityBuilder {
             FilesFragmentProvider::class
         ]
     )
-    abstract fun bindChatRoomActivity(): ChatRoomActivity
+    abstract fun bindChatDetailsActivity(): ChatDetailsActivity
 
     @PerActivity
     @ContributesAndroidInjector(modules = [PasswordFragmentProvider::class])
@@ -103,4 +113,8 @@ abstract class ActivityBuilder {
     @PerActivity
     @ContributesAndroidInjector(modules = [DrawModule::class])
     abstract fun bindDrawingActivity(): DrawingActivity
+
+    @PerActivity
+    @ContributesAndroidInjector(modules = [UserDetailsModule::class])
+    abstract fun bindUserDetailsActivity(): UserDetailsActivity
 }

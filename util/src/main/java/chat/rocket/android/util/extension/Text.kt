@@ -1,4 +1,4 @@
-package chat.rocket.android.util.extension
+package chat.dk.android.util.extension
 
 import java.math.BigInteger
 import java.security.MessageDigest

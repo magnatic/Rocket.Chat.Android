@@ -1,15 +1,22 @@
-package chat.rocket.android.chatdetails.di
+package chat.dk.android.chatdetails.di
 
-import chat.rocket.android.chatdetails.presentation.ChatDetailsView
-import chat.rocket.android.chatdetails.ui.ChatDetailsFragment
-import chat.rocket.android.dagger.scope.PerFragment
-import chat.rocket.android.db.ChatRoomDao
-import chat.rocket.android.db.DatabaseManager
+import androidx.lifecycle.LifecycleOwner
+import chat.dk.android.chatdetails.presentation.ChatDetailsView
+import chat.dk.android.chatdetails.ui.ChatDetailsFragment
+import chat.dk.android.core.lifecycle.CancelStrategy
+import chat.dk.android.dagger.scope.PerFragment
+import chat.dk.android.db.ChatRoomDao
+import chat.dk.android.db.DatabaseManager
 import dagger.Module
 import dagger.Provides
+import kotlinx.coroutines.experimental.Job
 
 @Module
 class ChatDetailsFragmentModule {
+
+    @Provides
+    @PerFragment
+    fun provideJob() = Job()
 
     @Provides
     @PerFragment
@@ -20,4 +27,16 @@ class ChatDetailsFragmentModule {
     @Provides
     @PerFragment
     fun provideChatRoomDao(manager: DatabaseManager): ChatRoomDao = manager.chatRoomDao()
+
+    @Provides
+    @PerFragment
+    fun provideLifecycleOwner(frag: ChatDetailsFragment): LifecycleOwner {
+        return frag
+    }
+
+    @Provides
+    @PerFragment
+    fun provideCancelStrategy(owner: LifecycleOwner, jobs: Job): CancelStrategy {
+        return CancelStrategy(owner, jobs)
+    }
 }

@@ -1,7 +1,7 @@
-package chat.rocket.android.server.infraestructure
+package chat.dk.android.server.infraestructure
 
-import chat.rocket.android.infrastructure.LocalRepository
-import chat.rocket.android.server.domain.PermissionsRepository
+import chat.dk.android.infrastructure.LocalRepository
+import chat.dk.android.server.domain.PermissionsRepository
 import chat.rocket.core.model.Permission
 import com.squareup.moshi.Moshi
 

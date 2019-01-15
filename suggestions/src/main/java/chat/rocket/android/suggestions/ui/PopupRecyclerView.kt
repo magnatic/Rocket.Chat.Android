@@ -1,11 +1,11 @@
-package chat.rocket.android.suggestions.ui
+package chat.dk.android.suggestions.ui
 
 import android.content.Context
 import android.util.AttributeSet
 import android.util.DisplayMetrics
 import android.view.WindowManager
 import androidx.recyclerview.widget.RecyclerView
-import chat.rocket.android.suggestions.R
+import chat.dk.android.suggestions.R
 
 internal class PopupRecyclerView : RecyclerView {
     private var displayWidth: Int = 0

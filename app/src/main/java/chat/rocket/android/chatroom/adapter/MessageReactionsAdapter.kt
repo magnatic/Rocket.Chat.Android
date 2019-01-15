@@ -1,4 +1,4 @@
-package chat.rocket.android.chatroom.adapter
+package chat.dk.android.chatroom.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,15 +6,15 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import chat.rocket.android.R
-import chat.rocket.android.chatroom.uimodel.ReactionUiModel
-import chat.rocket.android.dagger.DaggerLocalComponent
-import chat.rocket.android.emoji.Emoji
-import chat.rocket.android.emoji.EmojiKeyboardListener
-import chat.rocket.android.emoji.EmojiPickerPopup
-import chat.rocket.android.emoji.EmojiReactionListener
-import chat.rocket.android.emoji.internal.GlideApp
-import chat.rocket.android.infrastructure.LocalRepository
+import chat.dk.android.R
+import chat.dk.android.chatroom.uimodel.ReactionUiModel
+import chat.dk.android.dagger.DaggerLocalComponent
+import chat.dk.android.emoji.Emoji
+import chat.dk.android.emoji.EmojiKeyboardListener
+import chat.dk.android.emoji.EmojiPickerPopup
+import chat.dk.android.emoji.EmojiReactionListener
+import chat.dk.android.emoji.internal.GlideApp
+import chat.dk.android.infrastructure.LocalRepository
 import kotlinx.android.synthetic.main.item_reaction.view.*
 import java.util.concurrent.CopyOnWriteArrayList
 import javax.inject.Inject

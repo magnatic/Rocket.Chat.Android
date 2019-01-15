@@ -1,7 +1,7 @@
-package chat.rocket.android.authentication.resetpassword.di
+package chat.dk.android.authentication.resetpassword.di
 
-import chat.rocket.android.authentication.resetpassword.ui.ResetPasswordFragment
-import chat.rocket.android.dagger.scope.PerFragment
+import chat.dk.android.authentication.resetpassword.ui.ResetPasswordFragment
+import chat.dk.android.dagger.scope.PerFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

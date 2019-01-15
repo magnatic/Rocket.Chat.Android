@@ -1,3 +1,3 @@
-package chat.rocket.android.util.extension
+package chat.dk.android.util.extension
 
 fun Boolean?.orFalse(): Boolean = this ?: false

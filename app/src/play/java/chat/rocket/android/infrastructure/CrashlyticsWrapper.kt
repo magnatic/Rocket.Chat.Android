@@ -1,11 +1,11 @@
-package chat.rocket.android.infrastructure
+package chat.dk.android.infrastructure
 
 import android.app.Application
-import chat.rocket.android.BuildConfig
-import chat.rocket.android.server.domain.AccountsRepository
-import chat.rocket.android.server.domain.GetCurrentServerInteractor
-import chat.rocket.android.server.domain.GetSettingsInteractor
-import chat.rocket.android.server.domain.SITE_URL
+import chat.dk.android.BuildConfig
+import chat.dk.android.server.domain.AccountsRepository
+import chat.dk.android.server.domain.GetCurrentServerInteractor
+import chat.dk.android.server.domain.GetSettingsInteractor
+import chat.dk.android.server.domain.SITE_URL
 import com.crashlytics.android.Crashlytics
 import kotlinx.coroutines.experimental.runBlocking
 

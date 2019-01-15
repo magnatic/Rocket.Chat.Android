@@ -1,7 +1,7 @@
-package chat.rocket.android.files.di
+package chat.dk.android.files.di
 
-import chat.rocket.android.dagger.scope.PerFragment
-import chat.rocket.android.files.ui.FilesFragment
+import chat.dk.android.dagger.scope.PerFragment
+import chat.dk.android.files.ui.FilesFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

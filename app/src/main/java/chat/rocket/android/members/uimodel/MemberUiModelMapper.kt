@@ -1,8 +1,8 @@
-package chat.rocket.android.members.uimodel
+package chat.dk.android.members.uimodel
 
-import chat.rocket.android.server.domain.GetCurrentServerInteractor
-import chat.rocket.android.server.domain.GetSettingsInteractor
-import chat.rocket.android.server.domain.baseUrl
+import chat.dk.android.server.domain.GetCurrentServerInteractor
+import chat.dk.android.server.domain.GetSettingsInteractor
+import chat.dk.android.server.domain.baseUrl
 import chat.rocket.common.model.User
 import chat.rocket.core.model.Value
 import javax.inject.Inject

@@ -1,9 +1,9 @@
-package chat.rocket.android.server.infraestructure
+package chat.dk.android.server.infraestructure
 
-import chat.rocket.android.infrastructure.LocalRepository
-import chat.rocket.android.infrastructure.LocalRepository.Companion.SETTINGS_KEY
-import chat.rocket.android.server.domain.PublicSettings
-import chat.rocket.android.server.domain.SettingsRepository
+import chat.dk.android.infrastructure.LocalRepository
+import chat.dk.android.infrastructure.LocalRepository.Companion.SETTINGS_KEY
+import chat.dk.android.server.domain.PublicSettings
+import chat.dk.android.server.domain.SettingsRepository
 import chat.rocket.core.internal.SettingsAdapter
 import timber.log.Timber
 

@@ -1,6 +1,6 @@
-package chat.rocket.android.chatdetails.adapter
+package chat.dk.android.chatdetails.adapter
 
-import chat.rocket.android.chatdetails.domain.Option
-import chat.rocket.android.chatrooms.adapter.ItemHolder
+import chat.dk.android.chatdetails.domain.Option
+import chat.dk.android.chatrooms.adapter.ItemHolder
 
 data class OptionItemHolder(override val data: Option): ItemHolder<Option>

@@ -1,4 +1,4 @@
-package chat.rocket.android.push
+package chat.dk.android.push
 
 import android.os.Bundle
 import androidx.core.os.bundleOf
@@ -7,7 +7,7 @@ import androidx.work.NetworkType
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
 import androidx.work.workDataOf
-import chat.rocket.android.push.worker.TokenRegistrationWorker
+import chat.dk.android.push.worker.TokenRegistrationWorker
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
 import dagger.android.AndroidInjection

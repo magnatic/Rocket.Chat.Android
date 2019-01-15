@@ -1,4 +1,4 @@
-package chat.rocket.android.preferences.presentation
+package chat.dk.android.preferences.presentation
 
 interface PreferencesView {
 

@@ -1,9 +1,9 @@
-package chat.rocket.android.chatrooms.infrastructure
+package chat.dk.android.chatrooms.infrastructure
 
 import androidx.lifecycle.LiveData
-import chat.rocket.android.db.ChatRoomDao
-import chat.rocket.android.db.model.ChatRoom
-import chat.rocket.android.util.retryDB
+import chat.dk.android.db.ChatRoomDao
+import chat.dk.android.db.model.ChatRoom
+import chat.dk.android.util.retryDB
 import javax.inject.Inject
 
 class ChatRoomsRepository @Inject constructor(private val dao: ChatRoomDao) {

@@ -54,7 +54,7 @@
     <string name="action_take_a_photo">Сделать снимок</string>
     <string name="action_reset_avatar">Восстановить аватар</string>
     <string name="action_connect_server">Соединиться с сервером</string>
-    <string name="action_join_community">Сообщество</string>
+    <string name="action_join_community">Войти</string>
     <string name="action_create_server">Создать новый сервер</string>
     <string name="action_register">Зарегистрировать</string>
     <string name="action_confirm">Подтвердить</string>
@@ -64,7 +64,6 @@
     <string-array name="settings_actions">
         <item name="item_preferences">Персональные</item>
         <item name="item_password">Изменить пароль</item>
-        <item name="change_language">Изменить язык</item>
         <item name="item_share_app">Поделиться приложением</item>
         <item name="item_rate_us">Оцените нас</item>
         <item name="item_contact_us">Связаться с нами</item>
@@ -149,8 +148,8 @@
     <string name="msg_delete_description">Вы уверены, что хотите удалить это сообщение?</string>
     <string name="msg_channel_name">Название канала</string>
     <string name="msg_search">Поиск</string>
-    <string name="msg_welcome_to_rocket_chat">Rocket.Chat</string>
-    <string name="msg_team_communication">Командное общение</string>
+    <string name="msg_welcome_to_rocket_chat">DK.Chat</string>
+    <string name="msg_team_communication">Новый уровень корпоративного общения</string>
     <string name="msg_login_with_email">Войти с помощью <b>e-mail</b></string>
     <string name="msg_create_account">Создать аккаунт</string>
     <string name="msg_continue_with_facebook">Войти с помощью <b>Facebook</b></string>
@@ -191,7 +190,7 @@
     <string name="msg_channel_created_successfully">Канал создан успешно</string>
 
     <!-- Preferences messages -->
-    <string name="msg_analytics_tracking">Отслеживание аналитики</string>
+    <string name="msg_analytics_tracking">Отслеживание Analytics</string>
     <string name="msg_send_analytics_tracking">Отправлять анонимную статистику для улучшения приложения.</string>
     <string name="msg_do_not_send_analytics_tracking">Не отправлять анонимную статистику для улучшения приложения</string>
     <string name="msg_not_applicable_since_it_is_a_foss_version">Не применимо, так как это FOSS версия</string>
@@ -334,7 +333,10 @@
     <string name="message_room_changed_privacy">Тип канала изменен на: %1$s пользователем %2$s</string>
 
     <!-- User Details -->
+    <string name="message">Сообщение</string>
     <string name="timezone">Часовой поясe</string>
+    <string name="error_opening_dm">При создании этого диалога что-то пошло не так...</string>
+    <string name="retry">Повторить</string>
 
     <!-- Report -->
     <string name="submit">Отправить</string>

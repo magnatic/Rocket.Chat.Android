@@ -1,11 +1,11 @@
-package chat.rocket.android.emoji.internal
+package chat.dk.android.emoji.internal
 
 import android.text.SpannableString
 import android.text.Spanned
 import androidx.annotation.DrawableRes
-import chat.rocket.android.emoji.EmojiRepository
-import chat.rocket.android.emoji.EmojiTypefaceSpan
-import chat.rocket.android.emoji.R
+import chat.dk.android.emoji.EmojiRepository
+import chat.dk.android.emoji.EmojiTypefaceSpan
+import chat.dk.android.emoji.R
 
 enum class EmojiCategory {
     RECENTS {

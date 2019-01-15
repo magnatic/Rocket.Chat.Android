@@ -1,4 +1,4 @@
-package chat.rocket.android.server.domain
+package chat.dk.android.server.domain
 
 interface CurrentServerRepository {
     fun save(url: String)

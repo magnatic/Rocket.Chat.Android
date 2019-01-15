@@ -1,7 +1,7 @@
-package chat.rocket.android.server.domain
+package chat.dk.android.server.domain
 
-import chat.rocket.android.db.UserDao
-import chat.rocket.android.db.model.UserEntity
+import chat.dk.android.db.UserDao
+import chat.dk.android.db.model.UserEntity
 
 class GetCurrentUserInteractor(
     private val tokenRepository: TokenRepository,

@@ -1,6 +1,6 @@
-package chat.rocket.android.server.domain
+package chat.dk.android.server.domain
 
-import chat.rocket.android.util.extensions.mapToTypedArray
+import chat.dk.android.util.extensions.mapToTypedArray
 import chat.rocket.core.model.Value
 
 typealias PublicSettings = Map<String, Value<Any>>

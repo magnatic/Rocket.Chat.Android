@@ -1,11 +1,11 @@
-package chat.rocket.android.analytics
+package chat.dk.android.analytics
 
-import chat.rocket.android.analytics.event.AuthenticationEvent
-import chat.rocket.android.analytics.event.ScreenViewEvent
-import chat.rocket.android.analytics.event.SubscriptionTypeEvent
-import chat.rocket.android.server.domain.AnalyticsTrackingInteractor
-import chat.rocket.android.server.domain.GetAccountsInteractor
-import chat.rocket.android.server.domain.GetCurrentServerInteractor
+import chat.dk.android.analytics.event.AuthenticationEvent
+import chat.dk.android.analytics.event.ScreenViewEvent
+import chat.dk.android.analytics.event.SubscriptionTypeEvent
+import chat.dk.android.server.domain.AnalyticsTrackingInteractor
+import chat.dk.android.server.domain.GetAccountsInteractor
+import chat.dk.android.server.domain.GetCurrentServerInteractor
 import javax.inject.Inject
 
 class AnalyticsManager @Inject constructor(

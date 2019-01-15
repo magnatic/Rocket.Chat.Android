@@ -1,4 +1,4 @@
-package chat.rocket.android.suggestions.model
+package chat.dk.android.suggestions.model
 
 abstract class SuggestionModel(
     val text: String, // This is the text key for searches, must be unique.

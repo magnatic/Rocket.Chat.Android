@@ -1,4 +1,4 @@
-package chat.rocket.android.analytics.event
+package chat.dk.android.analytics.event
 
 sealed class ScreenViewEvent(val screenName: String) {
 
@@ -16,9 +16,9 @@ sealed class ScreenViewEvent(val screenName: String) {
     object ChatRoom : ScreenViewEvent("ChatRoomFragment")
     object ChatRooms : ScreenViewEvent("ChatRoomsFragment")
     object CreateChannel : ScreenViewEvent("CreateChannelFragment")
-    object UserDetails : ScreenViewEvent("UserDetailsFragment")
     object FavoriteMessages : ScreenViewEvent("FavoriteMessagesFragment")
     object Files : ScreenViewEvent("FilesFragment")
+    object MemberBottomSheet : ScreenViewEvent("MemberBottomSheetFragment")
     object Members : ScreenViewEvent("MembersFragment")
     object Mentions : ScreenViewEvent("MentionsFragment")
     object MessageInfo : ScreenViewEvent("MessageInfoFragment")

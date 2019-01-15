@@ -1,7 +1,7 @@
-package chat.rocket.android.authentication.server.di
+package chat.dk.android.authentication.server.di
 
-import chat.rocket.android.authentication.server.ui.ServerFragment
-import chat.rocket.android.dagger.scope.PerFragment
+import chat.dk.android.authentication.server.ui.ServerFragment
+import chat.dk.android.dagger.scope.PerFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

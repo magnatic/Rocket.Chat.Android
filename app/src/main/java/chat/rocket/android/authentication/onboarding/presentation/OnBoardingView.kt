@@ -1,6 +1,6 @@
-package chat.rocket.android.authentication.onboarding.presentation
+package chat.dk.android.authentication.onboarding.presentation
 
-import chat.rocket.android.core.behaviours.LoadingView
-import chat.rocket.android.core.behaviours.MessageView
+import chat.dk.android.core.behaviours.LoadingView
+import chat.dk.android.core.behaviours.MessageView
 
 interface OnBoardingView : LoadingView, MessageView

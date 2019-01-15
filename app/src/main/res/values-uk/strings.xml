@@ -39,7 +39,7 @@
     <string name="action_settings">Налаштування</string>
     <string name="action_create_channel">Створити канал</string>
     <string name="action_create">Створити</string>
-    <string name="action_logout">Вийти</string>
+    <string name="action_logout">Войти</string>
     <string name="action_attach_a_files">Attach a file</string> <!-- TODO Add translation -->
     <string name="action_confirm_password">Підтвердження зміни пароля</string>
     <string name="action_join_chat">Приєднатися до чату</string>
@@ -64,11 +64,11 @@
     <string-array name="settings_actions">
         <item name="item_preferences">Preferences</item> <!-- TODO Add translation -->
         <item name="item_password">Change password</item> <!-- TODO Add translation -->
-        <item name="item_share_app">Share app</item> <!-- TODO Add translation -->
-        <item name="item_rate_us">Rate us</item> <!-- TODO Add translation -->
-        <item name="item_contact_us">Contact us</item> <!-- TODO Add translation -->
-        <item name="item_licence">Licence</item> <!-- TODO Add translation -->
-        <item name="item_about">About</item> <!-- TODO Add translation -->
+        <item name="item_share_app">Share app</item>
+        <item name="item_rate_us">Rate us</item> 
+        <item name="item_contact_us">Contact us</item> 
+        <item name="item_licence">Licence</item>
+        <item name="item_about">About</item>
     </string-array>
 
     <!-- Regular information messages -->
@@ -147,7 +147,7 @@
     <string name="msg_send">Надіслати</string>
     <string name="msg_delete_message">Видалити повідомлення</string>
     <string name="msg_delete_description">Ви впевнені, що хочете видалити це повідомлення?</string>
-    <string name="msg_welcome_to_rocket_chat">Welcome to Rocket.Chat</string> <!-- TODO Add translation -->
+    <string name="msg_welcome_to_rocket_chat">Welcome to DK.Chat</string> <!-- TODO Add translation -->
     <string name="msg_team_communication">Team Communication</string> <!-- TODO Add translation -->
     <string name="msg_login_with_email">Login with <b>e-mail</b></string> <!-- TODO Add translation -->
     <string name="msg_create_account">Create an account</string> <!-- TODO Add translation -->
@@ -335,7 +335,10 @@
     <string name="message_room_changed_privacy">Room type changed to: %1$s by %2$s</string> <!-- TODO - Add proper translation -->
 
     <!-- User Details -->
+    <string name="message">Message</string>
     <string name="timezone">Timezone</string>
+    <string name="error_opening_dm">Something went wrong while we were creating this conversation…</string> <!-- TODO - Add proper translation -->
+    <string name="retry">Retry</string> <!-- TODO - Add proper translation -->
 
     <!-- Report -->
     <string name="submit">Submit</string> <!-- TODO - Add proper translation -->

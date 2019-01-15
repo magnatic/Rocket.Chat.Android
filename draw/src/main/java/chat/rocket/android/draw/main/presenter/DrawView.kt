@@ -1,4 +1,4 @@
-package chat.rocket.android.draw.main.presenter
+package chat.dk.android.draw.main.presenter
 
 interface DrawView {
 

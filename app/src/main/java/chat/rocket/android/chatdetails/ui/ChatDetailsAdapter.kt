@@ -1,12 +1,12 @@
-package chat.rocket.android.chatdetails.ui
+package chat.dk.android.chatdetails.ui
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import chat.rocket.android.R
-import chat.rocket.android.chatdetails.adapter.OptionItemHolder
-import chat.rocket.android.chatdetails.adapter.OptionViewHolder
-import chat.rocket.android.chatdetails.domain.Option
-import chat.rocket.android.util.extensions.inflate
+import chat.dk.android.R
+import chat.dk.android.chatdetails.adapter.OptionItemHolder
+import chat.dk.android.chatdetails.adapter.OptionViewHolder
+import chat.dk.android.chatdetails.domain.Option
+import chat.dk.android.util.extensions.inflate
 
 class ChatDetailsAdapter: RecyclerView.Adapter<OptionViewHolder>() {
     private val options: MutableList<Option> = ArrayList()

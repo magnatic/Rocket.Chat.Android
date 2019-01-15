@@ -1,3 +1,3 @@
-package chat.rocket.android.settings.presentation
+package chat.dk.android.settings.presentation
 
 interface SettingsView

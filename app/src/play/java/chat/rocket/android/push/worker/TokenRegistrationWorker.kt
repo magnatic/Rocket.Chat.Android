@@ -1,12 +1,12 @@
-package chat.rocket.android.push.worker
+package chat.dk.android.push.worker
 
 import androidx.work.Worker
-import chat.rocket.android.dagger.injector.AndroidWorkerInjection
-import chat.rocket.android.extensions.await
-import chat.rocket.android.infrastructure.LocalRepository
-import chat.rocket.android.server.domain.GetAccountsInteractor
-import chat.rocket.android.server.infraestructure.RocketChatClientFactory
-import chat.rocket.android.util.extensions.registerPushToken
+import chat.dk.android.dagger.injector.AndroidWorkerInjection
+import chat.dk.android.extensions.await
+import chat.dk.android.infrastructure.LocalRepository
+import chat.dk.android.server.domain.GetAccountsInteractor
+import chat.dk.android.server.infraestructure.RocketChatClientFactory
+import chat.dk.android.util.extensions.registerPushToken
 import chat.rocket.common.util.ifNull
 import com.google.firebase.iid.FirebaseInstanceId
 import kotlinx.coroutines.experimental.runBlocking

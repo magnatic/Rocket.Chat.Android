@@ -1,11 +1,11 @@
-package chat.rocket.android.settings.password.ui
+package chat.dk.android.settings.password.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.appcompat.app.AppCompatActivity
-import chat.rocket.android.R
-import chat.rocket.android.util.extensions.addFragment
-import chat.rocket.android.util.extensions.textContent
+import chat.dk.android.R
+import chat.dk.android.util.extensions.addFragment
+import chat.dk.android.util.extensions.textContent
 import dagger.android.AndroidInjection
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector

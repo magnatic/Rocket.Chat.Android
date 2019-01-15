@@ -1,4 +1,4 @@
-package chat.rocket.android.push
+package chat.dk.android.push
 
 import java.util.concurrent.atomic.AtomicInteger
 import javax.inject.Singleton

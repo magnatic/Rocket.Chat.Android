@@ -1,9 +1,9 @@
-package chat.rocket.android.suggestions.ui
+package chat.dk.android.suggestions.ui
 
 import androidx.recyclerview.widget.RecyclerView
-import chat.rocket.android.suggestions.model.SuggestionModel
-import chat.rocket.android.suggestions.strategy.CompletionStrategy
-import chat.rocket.android.suggestions.strategy.regex.StringMatchingCompletionStrategy
+import chat.dk.android.suggestions.model.SuggestionModel
+import chat.dk.android.suggestions.strategy.CompletionStrategy
+import chat.dk.android.suggestions.strategy.regex.StringMatchingCompletionStrategy
 import java.lang.reflect.Type
 import kotlin.properties.Delegates
 

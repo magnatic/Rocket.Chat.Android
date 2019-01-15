@@ -1,6 +1,6 @@
-package chat.rocket.android.chatroom.uimodel.suggestion
+package chat.dk.android.chatroom.uimodel.suggestion
 
-import chat.rocket.android.suggestions.model.SuggestionModel
+import chat.dk.android.suggestions.model.SuggestionModel
 
 class CommandSuggestionUiModel(
     text: String,

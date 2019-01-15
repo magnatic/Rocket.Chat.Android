@@ -1,9 +1,9 @@
-package chat.rocket.android.authentication.infraestructure
+package chat.dk.android.authentication.infraestructure
 
 import android.content.SharedPreferences
 import androidx.core.content.edit
-import chat.rocket.android.authentication.domain.model.TokenModel
-import chat.rocket.android.server.domain.TokenRepository
+import chat.dk.android.authentication.domain.model.TokenModel
+import chat.dk.android.server.domain.TokenRepository
 import chat.rocket.common.model.Token
 import com.squareup.moshi.Moshi
 import timber.log.Timber

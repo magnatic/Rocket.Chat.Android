@@ -1,5 +1,5 @@
 import android.content.Context
-import chat.rocket.android.R
+import chat.dk.android.R
 import org.threeten.bp.*
 import org.threeten.bp.format.DateTimeFormatter
 import org.threeten.bp.format.FormatStyle

@@ -1,4 +1,4 @@
-package chat.rocket.android.util
+package chat.dk.android.util
 
 import com.squareup.moshi.JsonAdapter
 import se.ansman.kotshi.KotshiJsonAdapterFactory

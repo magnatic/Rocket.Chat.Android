@@ -1,17 +1,17 @@
-package chat.rocket.android.preferences.ui
+package chat.dk.android.preferences.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import chat.rocket.android.BuildConfig
-import chat.rocket.android.R
-import chat.rocket.android.analytics.AnalyticsManager
-import chat.rocket.android.analytics.event.ScreenViewEvent
-import chat.rocket.android.main.ui.MainActivity
-import chat.rocket.android.preferences.presentation.PreferencesPresenter
-import chat.rocket.android.preferences.presentation.PreferencesView
+import chat.dk.android.BuildConfig
+import chat.dk.android.R
+import chat.dk.android.analytics.AnalyticsManager
+import chat.dk.android.analytics.event.ScreenViewEvent
+import chat.dk.android.main.ui.MainActivity
+import chat.dk.android.preferences.presentation.PreferencesPresenter
+import chat.dk.android.preferences.presentation.PreferencesView
 import dagger.android.support.AndroidSupportInjection
 import kotlinx.android.synthetic.main.app_bar.*
 import kotlinx.android.synthetic.main.fragment_preferences.*

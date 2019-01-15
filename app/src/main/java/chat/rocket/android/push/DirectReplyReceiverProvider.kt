@@ -1,6 +1,6 @@
-package chat.rocket.android.push
+package chat.dk.android.push
 
-import chat.rocket.android.dagger.module.AppModule
+import chat.dk.android.dagger.module.AppModule
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

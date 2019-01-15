@@ -1,7 +1,7 @@
-package chat.rocket.android.authentication.twofactor.presentation
+package chat.dk.android.authentication.twofactor.presentation
 
-import chat.rocket.android.core.behaviours.LoadingView
-import chat.rocket.android.core.behaviours.MessageView
+import chat.dk.android.core.behaviours.LoadingView
+import chat.dk.android.core.behaviours.MessageView
 
 interface TwoFAView : LoadingView, MessageView {
 

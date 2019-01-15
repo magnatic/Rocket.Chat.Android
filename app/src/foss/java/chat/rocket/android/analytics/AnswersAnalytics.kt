@@ -1,3 +1,3 @@
-package chat.rocket.android.analytics
+package chat.dk.android.analytics
 
 class AnswersAnalytics : Analytics

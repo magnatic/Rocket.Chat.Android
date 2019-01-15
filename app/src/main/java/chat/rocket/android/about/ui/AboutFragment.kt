@@ -1,15 +1,15 @@
-package chat.rocket.android.about.ui
+package chat.dk.android.about.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import chat.rocket.android.BuildConfig
-import chat.rocket.android.R
-import chat.rocket.android.analytics.AnalyticsManager
-import chat.rocket.android.analytics.event.ScreenViewEvent
-import chat.rocket.android.main.ui.MainActivity
+import chat.dk.android.BuildConfig
+import chat.dk.android.R
+import chat.dk.android.analytics.AnalyticsManager
+import chat.dk.android.analytics.event.ScreenViewEvent
+import chat.dk.android.main.ui.MainActivity
 import dagger.android.support.AndroidSupportInjection
 import kotlinx.android.synthetic.main.app_bar.*
 import kotlinx.android.synthetic.main.fragment_about.*

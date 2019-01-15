@@ -1,10 +1,10 @@
-package chat.rocket.android.server.presentation
+package chat.dk.android.server.presentation
 
 import android.content.Intent
-import chat.rocket.android.authentication.ui.newServerIntent
-import chat.rocket.android.main.ui.MainActivity
-import chat.rocket.android.server.ui.ChangeServerActivity
-import chat.rocket.android.server.ui.INTENT_CHAT_ROOM_ID
+import chat.dk.android.authentication.ui.newServerIntent
+import chat.dk.android.main.ui.MainActivity
+import chat.dk.android.server.ui.ChangeServerActivity
+import chat.dk.android.server.ui.INTENT_CHAT_ROOM_ID
 
 class ChangeServerNavigator (internal val activity: ChangeServerActivity) {
 

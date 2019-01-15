@@ -1,4 +1,4 @@
-package chat.rocket.android.analytics.event
+package chat.dk.android.analytics.event
 
 sealed class SubscriptionTypeEvent(val subscriptionTypeName: String) {
 

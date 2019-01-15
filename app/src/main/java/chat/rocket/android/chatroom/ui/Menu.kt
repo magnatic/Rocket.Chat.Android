@@ -1,4 +1,4 @@
-package chat.rocket.android.chatroom.ui
+package chat.dk.android.chatroom.ui
 
 import android.content.Context
 import android.view.Menu
@@ -6,8 +6,8 @@ import android.view.MenuItem
 import android.widget.EditText
 import androidx.appcompat.widget.SearchView
 import androidx.core.content.res.ResourcesCompat
-import chat.rocket.android.R
-import chat.rocket.android.util.extension.onQueryTextListener
+import chat.dk.android.R
+import chat.dk.android.util.extension.onQueryTextListener
 
 internal fun ChatRoomFragment.setupMenu(menu: Menu) {
     setupSearchMessageMenuItem(menu, requireContext())
@@ -108,7 +108,7 @@ private fun ChatRoomFragment.setupDetailsMenuItem(menu: Menu) {
             Menu.NONE,
             MENU_ACTION_SHOW_DETAILS,
             Menu.NONE,
-            R.string.title_channel_details
+            "Channel Details"
     ).setIcon(R.drawable.ic_info_outline_white_24dp)
             .setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM)
 }

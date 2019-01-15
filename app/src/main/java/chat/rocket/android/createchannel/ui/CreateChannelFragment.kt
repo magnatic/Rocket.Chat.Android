@@ -1,4 +1,4 @@
-package chat.rocket.android.createchannel.ui
+package chat.dk.android.createchannel.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -14,18 +14,18 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import chat.rocket.android.R
-import chat.rocket.android.analytics.AnalyticsManager
-import chat.rocket.android.analytics.event.ScreenViewEvent
-import chat.rocket.android.createchannel.presentation.CreateChannelPresenter
-import chat.rocket.android.createchannel.presentation.CreateChannelView
-import chat.rocket.android.main.ui.MainActivity
-import chat.rocket.android.members.adapter.MembersAdapter
-import chat.rocket.android.members.uimodel.MemberUiModel
-import chat.rocket.android.util.extension.asObservable
-import chat.rocket.android.util.extensions.inflate
-import chat.rocket.android.util.extensions.showToast
-import chat.rocket.android.util.extensions.ui
+import chat.dk.android.R
+import chat.dk.android.analytics.AnalyticsManager
+import chat.dk.android.analytics.event.ScreenViewEvent
+import chat.dk.android.createchannel.presentation.CreateChannelPresenter
+import chat.dk.android.createchannel.presentation.CreateChannelView
+import chat.dk.android.main.ui.MainActivity
+import chat.dk.android.members.adapter.MembersAdapter
+import chat.dk.android.members.uimodel.MemberUiModel
+import chat.dk.android.util.extension.asObservable
+import chat.dk.android.util.extensions.inflate
+import chat.dk.android.util.extensions.showToast
+import chat.dk.android.util.extensions.ui
 import chat.rocket.common.model.RoomType
 import chat.rocket.common.model.roomTypeOf
 import com.google.android.material.chip.Chip

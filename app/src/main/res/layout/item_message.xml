@@ -63,7 +63,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:visibility="visible">
+        tools:visibility="visible">text_content
 
         <View
             android:layout_width="0dp"
@@ -139,8 +139,10 @@
 
         <ImageView
             android:id="@+id/read_receipt_view"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
             android:visibility="gone"
             app:srcCompat="@drawable/ic_check_unread_24dp"
             tools:visibility="visible" />
@@ -151,9 +153,7 @@
         style="@style/Message.TextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:layout_marginEnd="4dp"
-        android:layout_marginBottom="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/message_header"
         app:layout_constraintTop_toBottomOf="@+id/message_header"
@@ -161,6 +161,7 @@
 
     <include
         layout="@layout/layout_reactions"
+        style="@style/Message.TextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="@+id/text_content"

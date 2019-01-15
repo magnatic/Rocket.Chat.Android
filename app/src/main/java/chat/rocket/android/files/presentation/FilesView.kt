@@ -1,9 +1,9 @@
-package chat.rocket.android.files.presentation
+package chat.dk.android.files.presentation
 
 import android.net.Uri
-import chat.rocket.android.core.behaviours.LoadingView
-import chat.rocket.android.core.behaviours.MessageView
-import chat.rocket.android.files.uimodel.FileUiModel
+import chat.dk.android.core.behaviours.LoadingView
+import chat.dk.android.core.behaviours.MessageView
+import chat.dk.android.files.uimodel.FileUiModel
 
 interface FilesView : MessageView, LoadingView {
 

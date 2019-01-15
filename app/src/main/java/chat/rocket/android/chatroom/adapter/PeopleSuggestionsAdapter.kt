@@ -1,4 +1,4 @@
-package chat.rocket.android.chatroom.adapter
+package chat.dk.android.chatroom.adapter
 
 import DrawableHelper
 import android.content.Context
@@ -8,12 +8,12 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.view.isVisible
-import chat.rocket.android.R
-import chat.rocket.android.chatroom.adapter.PeopleSuggestionsAdapter.PeopleSuggestionViewHolder
-import chat.rocket.android.chatroom.uimodel.suggestion.PeopleSuggestionUiModel
-import chat.rocket.android.suggestions.model.SuggestionModel
-import chat.rocket.android.suggestions.ui.BaseSuggestionViewHolder
-import chat.rocket.android.suggestions.ui.SuggestionsAdapter
+import chat.dk.android.R
+import chat.dk.android.chatroom.adapter.PeopleSuggestionsAdapter.PeopleSuggestionViewHolder
+import chat.dk.android.chatroom.uimodel.suggestion.PeopleSuggestionUiModel
+import chat.dk.android.suggestions.model.SuggestionModel
+import chat.dk.android.suggestions.ui.BaseSuggestionViewHolder
+import chat.dk.android.suggestions.ui.SuggestionsAdapter
 import com.facebook.drawee.view.SimpleDraweeView
 
 class PeopleSuggestionsAdapter(context: Context) : SuggestionsAdapter<PeopleSuggestionViewHolder>("@") {

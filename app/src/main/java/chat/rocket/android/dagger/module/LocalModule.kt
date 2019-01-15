@@ -1,14 +1,14 @@
-package chat.rocket.android.dagger.module
+package chat.dk.android.dagger.module
 
 import android.content.Context
 import android.content.SharedPreferences
-import chat.rocket.android.infrastructure.LocalRepository
-import chat.rocket.android.infrastructure.SharedPreferencesLocalRepository
-import chat.rocket.android.server.domain.CurrentServerRepository
-import chat.rocket.android.server.domain.GetCurrentServerInteractor
-import chat.rocket.android.server.infraestructure.SharedPrefsCurrentServerRepository
-import chat.rocket.android.util.AppJsonAdapterFactory
-import chat.rocket.android.util.TimberLogger
+import chat.dk.android.infrastructure.LocalRepository
+import chat.dk.android.infrastructure.SharedPreferencesLocalRepository
+import chat.dk.android.server.domain.CurrentServerRepository
+import chat.dk.android.server.domain.GetCurrentServerInteractor
+import chat.dk.android.server.infraestructure.SharedPrefsCurrentServerRepository
+import chat.dk.android.util.AppJsonAdapterFactory
+import chat.dk.android.util.TimberLogger
 import chat.rocket.common.internal.FallbackSealedClassJsonAdapter
 import chat.rocket.common.internal.ISO8601Date
 import chat.rocket.common.model.TimestampAdapter

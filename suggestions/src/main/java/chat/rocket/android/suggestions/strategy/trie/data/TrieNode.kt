@@ -1,6 +1,6 @@
-package chat.rocket.android.suggestions.strategy.trie.data
+package chat.dk.android.suggestions.strategy.trie.data
 
-import chat.rocket.android.suggestions.model.SuggestionModel
+import chat.dk.android.suggestions.model.SuggestionModel
 import kotlin.coroutines.experimental.buildSequence
 
 internal class TrieNode(

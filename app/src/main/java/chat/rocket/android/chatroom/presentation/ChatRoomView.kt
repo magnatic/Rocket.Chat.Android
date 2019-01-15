@@ -1,13 +1,13 @@
-package chat.rocket.android.chatroom.presentation
+package chat.dk.android.chatroom.presentation
 
-import chat.rocket.android.chatroom.uimodel.BaseUiModel
-import chat.rocket.android.chatroom.uimodel.suggestion.ChatRoomSuggestionUiModel
-import chat.rocket.android.chatroom.uimodel.suggestion.CommandSuggestionUiModel
-import chat.rocket.android.chatroom.uimodel.suggestion.EmojiSuggestionUiModel
-import chat.rocket.android.chatroom.uimodel.suggestion.PeopleSuggestionUiModel
-import chat.rocket.android.chatrooms.adapter.model.RoomUiModel
-import chat.rocket.android.core.behaviours.LoadingView
-import chat.rocket.android.core.behaviours.MessageView
+import chat.dk.android.chatroom.uimodel.BaseUiModel
+import chat.dk.android.chatroom.uimodel.suggestion.ChatRoomSuggestionUiModel
+import chat.dk.android.chatroom.uimodel.suggestion.CommandSuggestionUiModel
+import chat.dk.android.chatroom.uimodel.suggestion.EmojiSuggestionUiModel
+import chat.dk.android.chatroom.uimodel.suggestion.PeopleSuggestionUiModel
+import chat.dk.android.chatrooms.adapter.model.RoomUiModel
+import chat.dk.android.core.behaviours.LoadingView
+import chat.dk.android.core.behaviours.MessageView
 import chat.rocket.core.internal.realtime.socket.model.State
 import chat.rocket.core.model.ChatRoom
 

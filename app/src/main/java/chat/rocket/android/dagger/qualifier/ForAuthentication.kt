@@ -1,4 +1,4 @@
-package chat.rocket.android.dagger.qualifier
+package chat.dk.android.dagger.qualifier
 
 import javax.inject.Qualifier
 

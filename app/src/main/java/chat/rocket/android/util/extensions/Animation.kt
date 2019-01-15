@@ -1,4 +1,4 @@
-package chat.rocket.android.util.extensions
+package chat.dk.android.util.extensions
 
 import android.view.View
 import android.view.ViewAnimationUtils

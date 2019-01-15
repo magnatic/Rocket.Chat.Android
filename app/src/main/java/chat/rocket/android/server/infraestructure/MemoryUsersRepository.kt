@@ -1,7 +1,7 @@
-package chat.rocket.android.server.infraestructure
+package chat.dk.android.server.infraestructure
 
-import chat.rocket.android.server.domain.UsersRepository
-import chat.rocket.android.server.domain.UsersRepository.Query
+import chat.dk.android.server.domain.UsersRepository
+import chat.dk.android.server.domain.UsersRepository.Query
 import chat.rocket.common.model.User
 import java.util.concurrent.CopyOnWriteArrayList
 

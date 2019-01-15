@@ -1,8 +1,8 @@
-package chat.rocket.android.server.infraestructure
+package chat.dk.android.server.infraestructure
 
 import android.os.Build
-import chat.rocket.android.BuildConfig
-import chat.rocket.android.server.domain.TokenRepository
+import chat.dk.android.BuildConfig
+import chat.dk.android.server.domain.TokenRepository
 import chat.rocket.common.util.PlatformLogger
 import chat.rocket.core.RocketChatClient
 import okhttp3.OkHttpClient

@@ -1,4 +1,4 @@
-package chat.rocket.android.suggestions.ui
+package chat.dk.android.suggestions.ui
 
 import android.content.Context
 import android.graphics.Canvas
@@ -20,9 +20,9 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import chat.rocket.android.suggestions.R
-import chat.rocket.android.suggestions.model.SuggestionModel
-import chat.rocket.android.suggestions.ui.SuggestionsAdapter.Companion.CONSTRAINT_BOUND_TO_START
+import chat.dk.android.suggestions.R
+import chat.dk.android.suggestions.model.SuggestionModel
+import chat.dk.android.suggestions.ui.SuggestionsAdapter.Companion.CONSTRAINT_BOUND_TO_START
 import java.lang.ref.WeakReference
 import java.util.concurrent.atomic.AtomicInteger
 import kotlin.system.measureTimeMillis
@@ -74,7 +74,7 @@ class SuggestionsView : FrameLayout, TextWatcher {
         // If we don't have any adapter bound to any token bail out.
         if (adaptersByToken.isEmpty()) return
 
-        if (editor?.get() != null && editor?.get()?.selectionStart ?: 0 < completionOffset.get()) {
+        if (editor?.get() != null && editor?.get()?.selectionStart ?: 0 <= completionOffset.get()) {
             completionOffset.set(NO_STATE_INDEX)
             collapse()
         }

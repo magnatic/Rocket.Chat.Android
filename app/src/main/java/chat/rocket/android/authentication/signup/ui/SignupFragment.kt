@@ -1,4 +1,4 @@
-package chat.rocket.android.authentication.signup.ui
+package chat.dk.android.authentication.signup.ui
 
 import android.app.Activity
 import android.content.Intent
@@ -10,18 +10,18 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
-import chat.rocket.android.R
-import chat.rocket.android.analytics.AnalyticsManager
-import chat.rocket.android.analytics.event.ScreenViewEvent
-import chat.rocket.android.authentication.signup.presentation.SignupPresenter
-import chat.rocket.android.authentication.signup.presentation.SignupView
-import chat.rocket.android.helper.saveCredentials
-import chat.rocket.android.util.extension.asObservable
-import chat.rocket.android.util.extensions.inflate
-import chat.rocket.android.util.extensions.isEmail
-import chat.rocket.android.util.extensions.showToast
-import chat.rocket.android.util.extensions.textContent
-import chat.rocket.android.util.extensions.ui
+import chat.dk.android.R
+import chat.dk.android.analytics.AnalyticsManager
+import chat.dk.android.analytics.event.ScreenViewEvent
+import chat.dk.android.authentication.signup.presentation.SignupPresenter
+import chat.dk.android.authentication.signup.presentation.SignupView
+import chat.dk.android.helper.saveCredentials
+import chat.dk.android.util.extension.asObservable
+import chat.dk.android.util.extensions.inflate
+import chat.dk.android.util.extensions.isEmail
+import chat.dk.android.util.extensions.showToast
+import chat.dk.android.util.extensions.textContent
+import chat.dk.android.util.extensions.ui
 import dagger.android.support.AndroidSupportInjection
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.rxkotlin.Observables

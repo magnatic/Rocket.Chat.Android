@@ -1,4 +1,4 @@
-package chat.rocket.android.push
+package chat.dk.android.push
 
 import android.annotation.SuppressLint
 import android.app.Notification
@@ -19,12 +19,12 @@ import androidx.core.app.RemoteInput
 import android.text.Html
 import android.text.Spanned
 import androidx.core.content.ContextCompat
-import chat.rocket.android.R
-import chat.rocket.android.main.ui.MainActivity
-import chat.rocket.android.server.domain.GetAccountInteractor
-import chat.rocket.android.server.domain.GetSettingsInteractor
-import chat.rocket.android.server.domain.siteName
-import chat.rocket.android.server.ui.changeServerIntent
+import chat.dk.android.R
+import chat.dk.android.main.ui.MainActivity
+import chat.dk.android.server.domain.GetAccountInteractor
+import chat.dk.android.server.domain.GetSettingsInteractor
+import chat.dk.android.server.domain.siteName
+import chat.dk.android.server.ui.changeServerIntent
 import chat.rocket.common.model.RoomType
 import chat.rocket.common.model.roomTypeOf
 import com.squareup.moshi.Json
@@ -506,9 +506,9 @@ data class PushSender @KotshiConstructor constructor(
     }
 }
 
-const val EXTRA_NOT_ID = "chat.rocket.android.EXTRA_NOT_ID"
-const val EXTRA_HOSTNAME = "chat.rocket.android.EXTRA_HOSTNAME"
-const val EXTRA_PUSH_MESSAGE = "chat.rocket.android.EXTRA_PUSH_MESSAGE"
-const val EXTRA_ROOM_ID = "chat.rocket.android.EXTRA_ROOM_ID"
-const val ACTION_REPLY = "chat.rocket.android.ACTION_REPLY"
+const val EXTRA_NOT_ID = "chat.dk.android.EXTRA_NOT_ID"
+const val EXTRA_HOSTNAME = "chat.dk.android.EXTRA_HOSTNAME"
+const val EXTRA_PUSH_MESSAGE = "chat.dk.android.EXTRA_PUSH_MESSAGE"
+const val EXTRA_ROOM_ID = "chat.dk.android.EXTRA_ROOM_ID"
+const val ACTION_REPLY = "chat.dk.android.ACTION_REPLY"
 const val REMOTE_INPUT_REPLY = "REMOTE_INPUT_REPLY"

@@ -1,4 +1,4 @@
-package chat.rocket.android.authentication.twofactor.ui
+package chat.dk.android.authentication.twofactor.ui
 
 import android.content.Context
 import android.os.Bundle
@@ -10,16 +10,16 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
-import chat.rocket.android.R
-import chat.rocket.android.analytics.AnalyticsManager
-import chat.rocket.android.analytics.event.ScreenViewEvent
-import chat.rocket.android.authentication.twofactor.presentation.TwoFAPresenter
-import chat.rocket.android.authentication.twofactor.presentation.TwoFAView
-import chat.rocket.android.util.extension.asObservable
-import chat.rocket.android.util.extensions.inflate
-import chat.rocket.android.util.extensions.showToast
-import chat.rocket.android.util.extensions.textContent
-import chat.rocket.android.util.extensions.ui
+import chat.dk.android.R
+import chat.dk.android.analytics.AnalyticsManager
+import chat.dk.android.analytics.event.ScreenViewEvent
+import chat.dk.android.authentication.twofactor.presentation.TwoFAPresenter
+import chat.dk.android.authentication.twofactor.presentation.TwoFAView
+import chat.dk.android.util.extension.asObservable
+import chat.dk.android.util.extensions.inflate
+import chat.dk.android.util.extensions.showToast
+import chat.dk.android.util.extensions.textContent
+import chat.dk.android.util.extensions.ui
 import dagger.android.support.AndroidSupportInjection
 import io.reactivex.disposables.Disposable
 import kotlinx.android.synthetic.main.fragment_authentication_two_fa.*

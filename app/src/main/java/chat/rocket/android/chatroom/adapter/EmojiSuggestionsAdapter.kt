@@ -1,4 +1,4 @@
-package chat.rocket.android.chatroom.adapter
+package chat.dk.android.chatroom.adapter
 
 import android.annotation.SuppressLint
 import android.text.SpannableStringBuilder
@@ -6,15 +6,15 @@ import android.text.style.ImageSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import chat.rocket.android.R
-import chat.rocket.android.chatroom.adapter.EmojiSuggestionsAdapter.EmojiSuggestionViewHolder
-import chat.rocket.android.chatroom.uimodel.suggestion.EmojiSuggestionUiModel
-import chat.rocket.android.emoji.EmojiParser
-import chat.rocket.android.emoji.internal.isCustom
-import chat.rocket.android.suggestions.model.SuggestionModel
-import chat.rocket.android.suggestions.strategy.trie.TrieCompletionStrategy
-import chat.rocket.android.suggestions.ui.BaseSuggestionViewHolder
-import chat.rocket.android.suggestions.ui.SuggestionsAdapter
+import chat.dk.android.R
+import chat.dk.android.chatroom.adapter.EmojiSuggestionsAdapter.EmojiSuggestionViewHolder
+import chat.dk.android.chatroom.uimodel.suggestion.EmojiSuggestionUiModel
+import chat.dk.android.emoji.EmojiParser
+import chat.dk.android.emoji.internal.isCustom
+import chat.dk.android.suggestions.model.SuggestionModel
+import chat.dk.android.suggestions.strategy.trie.TrieCompletionStrategy
+import chat.dk.android.suggestions.ui.BaseSuggestionViewHolder
+import chat.dk.android.suggestions.ui.SuggestionsAdapter
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.suggestion_emoji_item.view.*
 

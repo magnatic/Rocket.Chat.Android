@@ -1,7 +1,7 @@
-package chat.rocket.android.server.infraestructure
+package chat.dk.android.server.infraestructure
 
 import android.content.SharedPreferences
-import chat.rocket.android.server.domain.AnalyticsTrackingRepository
+import chat.dk.android.server.domain.AnalyticsTrackingRepository
 
 private const val ANALYTICS_TRACKING_KEY = "ANALYTICS_TRACKING_KEY"
 

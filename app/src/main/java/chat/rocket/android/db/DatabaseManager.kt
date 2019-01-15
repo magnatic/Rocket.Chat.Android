@@ -1,25 +1,25 @@
-package chat.rocket.android.db
+package chat.dk.android.db
 
 import android.app.Application
-import chat.rocket.android.R
-import chat.rocket.android.db.model.BaseMessageEntity
-import chat.rocket.android.db.model.BaseUserEntity
-import chat.rocket.android.db.model.ChatRoomEntity
-import chat.rocket.android.db.model.MessageChannels
-import chat.rocket.android.db.model.MessageEntity
-import chat.rocket.android.db.model.MessageFavoritesRelation
-import chat.rocket.android.db.model.MessageMentionsRelation
-import chat.rocket.android.db.model.MessagesSync
-import chat.rocket.android.db.model.ReactionEntity
-import chat.rocket.android.db.model.UrlEntity
-import chat.rocket.android.db.model.UserEntity
-import chat.rocket.android.db.model.UserStatus
-import chat.rocket.android.db.model.asEntity
-import chat.rocket.android.util.extensions.exhaustive
-import chat.rocket.android.util.extensions.removeTrailingSlash
-import chat.rocket.android.util.extensions.toEntity
-import chat.rocket.android.util.extensions.userId
-import chat.rocket.android.util.retryDB
+import chat.dk.android.R
+import chat.dk.android.db.model.BaseMessageEntity
+import chat.dk.android.db.model.BaseUserEntity
+import chat.dk.android.db.model.ChatRoomEntity
+import chat.dk.android.db.model.MessageChannels
+import chat.dk.android.db.model.MessageEntity
+import chat.dk.android.db.model.MessageFavoritesRelation
+import chat.dk.android.db.model.MessageMentionsRelation
+import chat.dk.android.db.model.MessagesSync
+import chat.dk.android.db.model.ReactionEntity
+import chat.dk.android.db.model.UrlEntity
+import chat.dk.android.db.model.UserEntity
+import chat.dk.android.db.model.UserStatus
+import chat.dk.android.db.model.asEntity
+import chat.dk.android.util.extensions.exhaustive
+import chat.dk.android.util.extensions.removeTrailingSlash
+import chat.dk.android.util.extensions.toEntity
+import chat.dk.android.util.extensions.userId
+import chat.dk.android.util.retryDB
 import chat.rocket.common.model.BaseRoom
 import chat.rocket.common.model.RoomType
 import chat.rocket.common.model.SimpleUser
@@ -99,18 +99,6 @@ class DatabaseManager(val context: Application, val serverUrl: String) {
     suspend fun getRoom(id: String) = withContext(dbManagerContext) {
         retryDB("getRoom($id)") {
             chatRoomDao().getSync(id)
-        }
-    }
-
-    suspend fun insertOrReplaceRoom(chatRoomEntity: ChatRoomEntity) {
-        retryDB("insertOrReplace($chatRoomEntity)") {
-            chatRoomDao().insertOrReplace(chatRoomEntity)
-        }
-    }
-
-    suspend fun getUser(id: String) = withContext(dbManagerContext) {
-        retryDB("getUser($id)") {
-            userDao().getUser(id)
         }
     }
 

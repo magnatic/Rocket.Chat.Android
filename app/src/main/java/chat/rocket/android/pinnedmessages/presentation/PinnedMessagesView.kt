@@ -1,8 +1,8 @@
-package chat.rocket.android.pinnedmessages.presentation
+package chat.dk.android.pinnedmessages.presentation
 
-import chat.rocket.android.chatroom.uimodel.BaseUiModel
-import chat.rocket.android.core.behaviours.LoadingView
-import chat.rocket.android.core.behaviours.MessageView
+import chat.dk.android.chatroom.uimodel.BaseUiModel
+import chat.dk.android.core.behaviours.LoadingView
+import chat.dk.android.core.behaviours.MessageView
 
 interface PinnedMessagesView : MessageView, LoadingView {
 

@@ -1,4 +1,4 @@
-package chat.rocket.android.emoji.internal.db
+package chat.dk.android.emoji.internal.db
 
 import androidx.room.TypeConverter
 

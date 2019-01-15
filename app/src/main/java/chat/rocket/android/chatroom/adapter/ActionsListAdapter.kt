@@ -1,11 +1,11 @@
-package chat.rocket.android.chatroom.adapter
+package chat.dk.android.chatroom.adapter
 
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
-import chat.rocket.android.R
-import chat.rocket.android.util.extensions.inflate
+import chat.dk.android.R
+import chat.dk.android.util.extensions.inflate
 import chat.rocket.core.model.attachment.actions.Action
 import chat.rocket.core.model.attachment.actions.ButtonAction
 import com.facebook.drawee.backends.pipeline.Fresco

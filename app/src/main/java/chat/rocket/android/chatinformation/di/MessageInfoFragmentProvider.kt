@@ -1,7 +1,7 @@
-package chat.rocket.android.chatinformation.di
+package chat.dk.android.chatinformation.di
 
-import chat.rocket.android.chatinformation.ui.MessageInfoFragment
-import chat.rocket.android.dagger.scope.PerFragment
+import chat.dk.android.chatinformation.ui.MessageInfoFragment
+import chat.dk.android.dagger.scope.PerFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

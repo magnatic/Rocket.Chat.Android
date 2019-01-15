@@ -1,9 +1,9 @@
-package chat.rocket.android.helper
+package chat.dk.android.helper
 
-import chat.rocket.android.infrastructure.LocalRepository
-import chat.rocket.android.server.domain.GetCurrentServerInteractor
-import chat.rocket.android.server.domain.SettingsRepository
-import chat.rocket.android.server.domain.useRealName
+import chat.dk.android.infrastructure.LocalRepository
+import chat.dk.android.server.domain.GetCurrentServerInteractor
+import chat.dk.android.server.domain.SettingsRepository
+import chat.dk.android.server.domain.useRealName
 import chat.rocket.common.model.SimpleUser
 import chat.rocket.common.model.User
 import javax.inject.Inject

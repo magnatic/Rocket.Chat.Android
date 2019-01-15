@@ -1,4 +1,4 @@
-package chat.rocket.android.core.behaviours
+package chat.dk.android.core.behaviours
 
 interface LoadingView {
 

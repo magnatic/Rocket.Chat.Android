@@ -1,4 +1,4 @@
-package chat.rocket.android.chatrooms.adapter
+package chat.dk.android.chatrooms.adapter
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

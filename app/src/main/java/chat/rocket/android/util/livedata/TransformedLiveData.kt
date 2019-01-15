@@ -1,4 +1,4 @@
-package chat.rocket.android.util.livedata
+package chat.dk.android.util.livedata
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer

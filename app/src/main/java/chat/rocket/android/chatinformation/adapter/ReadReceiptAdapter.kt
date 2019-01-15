@@ -1,12 +1,12 @@
-package chat.rocket.android.chatinformation.adapter
+package chat.dk.android.chatinformation.adapter
 
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import chat.rocket.android.R
-import chat.rocket.android.chatinformation.adapter.ReadReceiptAdapter.ReadReceiptViewHolder
-import chat.rocket.android.chatinformation.viewmodel.ReadReceiptViewModel
-import chat.rocket.android.util.extensions.inflate
+import chat.dk.android.R
+import chat.dk.android.chatinformation.adapter.ReadReceiptAdapter.ReadReceiptViewHolder
+import chat.dk.android.chatinformation.viewmodel.ReadReceiptViewModel
+import chat.dk.android.util.extensions.inflate
 import kotlinx.android.synthetic.main.avatar.view.*
 import kotlinx.android.synthetic.main.item_read_receipt.view.*
 

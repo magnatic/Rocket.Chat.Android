@@ -1,4 +1,4 @@
-package chat.rocket.android.db
+package chat.dk.android.db
 
 import androidx.room.Dao
 import androidx.room.Insert
@@ -6,9 +6,9 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Transaction
 import androidx.room.Update
-import chat.rocket.android.db.model.BaseUserEntity
-import chat.rocket.android.db.model.UserEntity
-import chat.rocket.android.db.model.UserStatus
+import chat.dk.android.db.model.BaseUserEntity
+import chat.dk.android.db.model.UserEntity
+import chat.dk.android.db.model.UserStatus
 import timber.log.Timber
 
 @Dao

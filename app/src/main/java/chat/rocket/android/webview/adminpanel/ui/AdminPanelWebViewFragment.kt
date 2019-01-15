@@ -1,4 +1,4 @@
-package chat.rocket.android.webview.adminpanel.ui
+package chat.dk.android.webview.adminpanel.ui
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -8,10 +8,10 @@ import android.view.ViewGroup
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
-import chat.rocket.android.R
-import chat.rocket.android.analytics.AnalyticsManager
-import chat.rocket.android.util.extensions.inflate
-import chat.rocket.android.util.extensions.ui
+import chat.dk.android.R
+import chat.dk.android.analytics.AnalyticsManager
+import chat.dk.android.util.extensions.inflate
+import chat.dk.android.util.extensions.ui
 import dagger.android.support.DaggerFragment
 import kotlinx.android.synthetic.main.fragment_admin_panel_web_view.*
 import javax.inject.Inject

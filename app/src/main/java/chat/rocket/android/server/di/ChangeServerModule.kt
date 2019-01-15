@@ -1,12 +1,12 @@
-package chat.rocket.android.server.di
+package chat.dk.android.server.di
 
 import androidx.lifecycle.LifecycleOwner
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.dagger.scope.PerActivity
-import chat.rocket.android.dagger.scope.PerFragment
-import chat.rocket.android.server.presentation.ChangeServerNavigator
-import chat.rocket.android.server.presentation.ChangeServerView
-import chat.rocket.android.server.ui.ChangeServerActivity
+import chat.dk.android.core.lifecycle.CancelStrategy
+import chat.dk.android.dagger.scope.PerActivity
+import chat.dk.android.dagger.scope.PerFragment
+import chat.dk.android.server.presentation.ChangeServerNavigator
+import chat.dk.android.server.presentation.ChangeServerView
+import chat.dk.android.server.ui.ChangeServerActivity
 import dagger.Module
 import dagger.Provides
 import kotlinx.coroutines.experimental.Job

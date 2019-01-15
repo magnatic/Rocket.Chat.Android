@@ -1,7 +1,7 @@
-package chat.rocket.android.members.uimodel
+package chat.dk.android.members.uimodel
 
-import chat.rocket.android.server.domain.useRealName
-import chat.rocket.android.util.extensions.avatarUrl
+import chat.dk.android.server.domain.useRealName
+import chat.dk.android.util.extensions.avatarUrl
 import chat.rocket.common.model.User
 import chat.rocket.common.model.UserStatus
 import chat.rocket.core.model.Value

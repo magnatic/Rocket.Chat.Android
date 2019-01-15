@@ -1,7 +1,7 @@
-package chat.rocket.android.chatrooms.presentation
+package chat.dk.android.chatrooms.presentation
 
-import chat.rocket.android.core.behaviours.LoadingView
-import chat.rocket.android.core.behaviours.MessageView
+import chat.dk.android.core.behaviours.LoadingView
+import chat.dk.android.core.behaviours.MessageView
 
 interface ChatRoomsView : LoadingView, MessageView {
     fun showLoadingRoom(name: CharSequence)

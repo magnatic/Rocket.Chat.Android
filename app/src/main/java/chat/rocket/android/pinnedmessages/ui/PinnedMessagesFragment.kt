@@ -1,4 +1,4 @@
-package chat.rocket.android.pinnedmessages.ui
+package chat.dk.android.pinnedmessages.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,18 +9,20 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import chat.rocket.android.R
-import chat.rocket.android.analytics.AnalyticsManager
-import chat.rocket.android.analytics.event.ScreenViewEvent
-import chat.rocket.android.chatroom.adapter.ChatRoomAdapter
-import chat.rocket.android.chatroom.ui.ChatRoomActivity
-import chat.rocket.android.chatroom.uimodel.BaseUiModel
-import chat.rocket.android.helper.EndlessRecyclerViewScrollListener
-import chat.rocket.android.pinnedmessages.presentation.PinnedMessagesPresenter
-import chat.rocket.android.pinnedmessages.presentation.PinnedMessagesView
-import chat.rocket.android.util.extensions.inflate
-import chat.rocket.android.util.extensions.showToast
-import chat.rocket.android.util.extensions.ui
+import chat.dk.android.R
+import chat.dk.android.analytics.AnalyticsManager
+import chat.dk.android.analytics.event.ScreenViewEvent
+import chat.dk.android.chatdetails.ui.ChatDetailsActivity
+import chat.dk.android.chatroom.adapter.ChatRoomAdapter
+import chat.dk.android.chatroom.ui.ChatRoomActivity
+import chat.dk.android.chatroom.uimodel.BaseUiModel
+import chat.dk.android.helper.EndlessRecyclerViewScrollListener
+import chat.dk.android.pinnedmessages.presentation.PinnedMessagesPresenter
+import chat.dk.android.pinnedmessages.presentation.PinnedMessagesView
+import chat.dk.android.server.domain.AnalyticsTrackingInteractor
+import chat.dk.android.util.extensions.inflate
+import chat.dk.android.util.extensions.showToast
+import chat.dk.android.util.extensions.ui
 import dagger.android.support.AndroidSupportInjection
 import kotlinx.android.synthetic.main.fragment_pinned_messages.*
 import javax.inject.Inject
@@ -121,6 +123,9 @@ class PinnedMessagesFragment : Fragment(), PinnedMessagesView {
     }
 
     private fun setupToolbar() {
-        (activity as ChatRoomActivity).showToolbarTitle((getString(R.string.title_pinned_messages)))
+        (activity as ChatDetailsActivity).let {
+            it.setToolbarTitle(getString(R.string.title_pinned_messages))
+            it.setNavigationIcon(R.drawable.ic_arrow_back_white_24dp)
+        }
     }
 }

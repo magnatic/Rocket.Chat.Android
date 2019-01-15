@@ -1,8 +1,8 @@
-package chat.rocket.android.analytics
+package chat.dk.android.analytics
 
-import chat.rocket.android.analytics.event.AuthenticationEvent
-import chat.rocket.android.analytics.event.ScreenViewEvent
-import chat.rocket.android.analytics.event.SubscriptionTypeEvent
+import chat.dk.android.analytics.event.AuthenticationEvent
+import chat.dk.android.analytics.event.ScreenViewEvent
+import chat.dk.android.analytics.event.SubscriptionTypeEvent
 import com.crashlytics.android.answers.Answers
 import com.crashlytics.android.answers.CustomEvent
 import com.crashlytics.android.answers.LoginEvent

@@ -1,4 +1,4 @@
-package chat.rocket.android.helper
+package chat.dk.android.helper
 
 import android.app.Application
 import android.content.Context
@@ -12,14 +12,14 @@ import android.text.style.ImageSpan
 import android.text.style.ReplacementSpan
 import android.view.View
 import androidx.core.content.res.ResourcesCompat
-import chat.rocket.android.R
-import chat.rocket.android.chatroom.ui.StrikethroughDelimiterProcessor
-import chat.rocket.android.emoji.EmojiParser
-import chat.rocket.android.emoji.EmojiRepository
-import chat.rocket.android.emoji.EmojiTypefaceSpan
-import chat.rocket.android.server.domain.PublicSettings
-import chat.rocket.android.server.domain.useRealName
-import chat.rocket.android.util.extensions.openTabbedUrl
+import chat.dk.android.R
+import chat.dk.android.chatroom.ui.StrikethroughDelimiterProcessor
+import chat.dk.android.emoji.EmojiParser
+import chat.dk.android.emoji.EmojiRepository
+import chat.dk.android.emoji.EmojiTypefaceSpan
+import chat.dk.android.server.domain.PublicSettings
+import chat.dk.android.server.domain.useRealName
+import chat.dk.android.util.extensions.openTabbedUrl
 import chat.rocket.common.model.SimpleUser
 import chat.rocket.core.model.Message
 import org.commonmark.Extension

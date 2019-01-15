@@ -1,21 +1,21 @@
-package chat.rocket.android.db
+package chat.dk.android.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import chat.rocket.android.db.model.AttachmentActionEntity
-import chat.rocket.android.db.model.AttachmentEntity
-import chat.rocket.android.db.model.AttachmentFieldEntity
-import chat.rocket.android.db.model.ChatRoomEntity
-import chat.rocket.android.db.model.MessageChannels
-import chat.rocket.android.db.model.MessageEntity
-import chat.rocket.android.db.model.MessageFavoritesRelation
-import chat.rocket.android.db.model.MessageMentionsRelation
-import chat.rocket.android.db.model.MessagesSync
-import chat.rocket.android.db.model.ReactionEntity
-import chat.rocket.android.db.model.UrlEntity
-import chat.rocket.android.db.model.UserEntity
-import chat.rocket.android.emoji.internal.db.StringListConverter
+import chat.dk.android.db.model.AttachmentActionEntity
+import chat.dk.android.db.model.AttachmentEntity
+import chat.dk.android.db.model.AttachmentFieldEntity
+import chat.dk.android.db.model.ChatRoomEntity
+import chat.dk.android.db.model.MessageChannels
+import chat.dk.android.db.model.MessageEntity
+import chat.dk.android.db.model.MessageFavoritesRelation
+import chat.dk.android.db.model.MessageMentionsRelation
+import chat.dk.android.db.model.MessagesSync
+import chat.dk.android.db.model.ReactionEntity
+import chat.dk.android.db.model.UrlEntity
+import chat.dk.android.db.model.UserEntity
+import chat.dk.android.emoji.internal.db.StringListConverter
 
 @Database(
     entities = [

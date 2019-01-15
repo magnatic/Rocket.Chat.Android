@@ -1,4 +1,4 @@
-package chat.rocket.android.authentication.ui
+package chat.dk.android.authentication.ui
 
 import android.content.Context
 import android.content.Intent
@@ -7,12 +7,12 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import chat.rocket.android.R
-import chat.rocket.android.analytics.event.ScreenViewEvent
-import chat.rocket.android.authentication.domain.model.LoginDeepLinkInfo
-import chat.rocket.android.authentication.domain.model.getLoginDeepLinkInfo
-import chat.rocket.android.authentication.presentation.AuthenticationPresenter
-import chat.rocket.android.util.extensions.addFragment
+import chat.dk.android.R
+import chat.dk.android.analytics.event.ScreenViewEvent
+import chat.dk.android.authentication.domain.model.LoginDeepLinkInfo
+import chat.dk.android.authentication.domain.model.getLoginDeepLinkInfo
+import chat.dk.android.authentication.presentation.AuthenticationPresenter
+import chat.dk.android.util.extensions.addFragment
 import chat.rocket.common.util.ifNull
 import dagger.android.AndroidInjection
 import dagger.android.AndroidInjector
@@ -87,7 +87,7 @@ class AuthenticationActivity : AppCompatActivity(), HasSupportFragmentInjector {
             R.id.fragment_container,
             allowStateLoss = true
         ) {
-            chat.rocket.android.authentication.onboarding.ui.newInstance()
+            chat.dk.android.authentication.onboarding.ui.newInstance()
         }
     }
 
@@ -97,7 +97,7 @@ class AuthenticationActivity : AppCompatActivity(), HasSupportFragmentInjector {
             R.id.fragment_container,
             allowStateLoss = true
         ) {
-            chat.rocket.android.authentication.server.ui.newInstance()
+            chat.dk.android.authentication.server.ui.newInstance()
         }
     }
 

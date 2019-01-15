@@ -1,6 +1,6 @@
-package chat.rocket.android.server.infraestructure
+package chat.dk.android.server.infraestructure
 
-import chat.rocket.android.server.domain.ChatRoomsRepository
+import chat.dk.android.server.domain.ChatRoomsRepository
 import chat.rocket.core.model.ChatRoom
 
 class MemoryChatRoomsRepository : ChatRoomsRepository {

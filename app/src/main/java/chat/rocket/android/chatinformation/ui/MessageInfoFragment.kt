@@ -1,4 +1,4 @@
-package chat.rocket.android.chatinformation.ui
+package chat.dk.android.chatinformation.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,15 +9,15 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import chat.rocket.android.R
-import chat.rocket.android.analytics.AnalyticsManager
-import chat.rocket.android.analytics.event.ScreenViewEvent
-import chat.rocket.android.chatinformation.adapter.ReadReceiptAdapter
-import chat.rocket.android.chatinformation.presentation.MessageInfoPresenter
-import chat.rocket.android.chatinformation.presentation.MessageInfoView
-import chat.rocket.android.chatinformation.viewmodel.ReadReceiptViewModel
-import chat.rocket.android.util.extensions.showToast
-import chat.rocket.android.util.extensions.ui
+import chat.dk.android.R
+import chat.dk.android.analytics.AnalyticsManager
+import chat.dk.android.analytics.event.ScreenViewEvent
+import chat.dk.android.chatinformation.adapter.ReadReceiptAdapter
+import chat.dk.android.chatinformation.presentation.MessageInfoPresenter
+import chat.dk.android.chatinformation.presentation.MessageInfoView
+import chat.dk.android.chatinformation.viewmodel.ReadReceiptViewModel
+import chat.dk.android.util.extensions.showToast
+import chat.dk.android.util.extensions.ui
 import dagger.android.support.AndroidSupportInjection
 import kotlinx.android.synthetic.main.fragment_message_info.*
 import javax.inject.Inject

@@ -1,5 +1,5 @@
-package chat.rocket.android.emoji.internal
+package chat.dk.android.emoji.internal
 
-import chat.rocket.android.emoji.Emoji
+import chat.dk.android.emoji.Emoji
 
 fun Emoji.isCustom(): Boolean = this.url != null

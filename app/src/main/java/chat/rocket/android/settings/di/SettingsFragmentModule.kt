@@ -1,10 +1,10 @@
-package chat.rocket.android.settings.di
+package chat.dk.android.settings.di
 
 import androidx.lifecycle.LifecycleOwner
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.dagger.scope.PerFragment
-import chat.rocket.android.settings.presentation.SettingsView
-import chat.rocket.android.settings.ui.SettingsFragment
+import chat.dk.android.core.lifecycle.CancelStrategy
+import chat.dk.android.dagger.scope.PerFragment
+import chat.dk.android.settings.presentation.SettingsView
+import chat.dk.android.settings.ui.SettingsFragment
 import dagger.Module
 import dagger.Provides
 import kotlinx.coroutines.experimental.Job

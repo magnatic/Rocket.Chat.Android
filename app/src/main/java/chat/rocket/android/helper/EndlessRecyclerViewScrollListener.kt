@@ -1,4 +1,4 @@
-package chat.rocket.android.helper
+package chat.dk.android.helper
 
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager

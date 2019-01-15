@@ -1,6 +1,6 @@
-package chat.rocket.android.suggestions.strategy
+package chat.dk.android.suggestions.strategy
 
-import chat.rocket.android.suggestions.model.SuggestionModel
+import chat.dk.android.suggestions.model.SuggestionModel
 
 interface CompletionStrategy {
     fun getItem(prefix: String, position: Int): SuggestionModel

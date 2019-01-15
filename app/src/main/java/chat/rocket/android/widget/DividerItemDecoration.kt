@@ -1,4 +1,4 @@
-package chat.rocket.android.widget
+package chat.dk.android.widget
 
 import android.content.Context
 import android.graphics.Canvas

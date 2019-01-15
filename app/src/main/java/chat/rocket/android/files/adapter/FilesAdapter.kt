@@ -1,12 +1,12 @@
-package chat.rocket.android.files.adapter
+package chat.dk.android.files.adapter
 
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
-import chat.rocket.android.R
-import chat.rocket.android.files.uimodel.FileUiModel
-import chat.rocket.android.util.extensions.inflate
+import chat.dk.android.R
+import chat.dk.android.files.uimodel.FileUiModel
+import chat.dk.android.util.extensions.inflate
 import kotlinx.android.synthetic.main.item_generic_attachment.view.*
 
 class FilesAdapter(private val listener: (FileUiModel) -> Unit) :

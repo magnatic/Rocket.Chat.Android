@@ -1,13 +1,13 @@
-package chat.rocket.android.dagger.module
+package chat.dk.android.dagger.module
 
 import androidx.work.Worker
-import chat.rocket.android.chatroom.di.MessageServiceProvider
-import chat.rocket.android.chatroom.service.MessageService
-import chat.rocket.android.dagger.qualifier.WorkerKey
-import chat.rocket.android.push.FirebaseMessagingService
-import chat.rocket.android.push.di.FirebaseMessagingServiceProvider
-import chat.rocket.android.push.di.TokenRegistrationSubComponent
-import chat.rocket.android.push.worker.TokenRegistrationWorker
+import chat.dk.android.chatroom.di.MessageServiceProvider
+import chat.dk.android.chatroom.service.MessageService
+import chat.dk.android.dagger.qualifier.WorkerKey
+import chat.dk.android.push.FirebaseMessagingService
+import chat.dk.android.push.di.FirebaseMessagingServiceProvider
+import chat.dk.android.push.di.TokenRegistrationSubComponent
+import chat.dk.android.push.worker.TokenRegistrationWorker
 import dagger.Binds
 import dagger.Module
 import dagger.android.AndroidInjector

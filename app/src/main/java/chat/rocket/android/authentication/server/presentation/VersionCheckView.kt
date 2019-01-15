@@ -1,4 +1,4 @@
-package chat.rocket.android.authentication.server.presentation
+package chat.dk.android.authentication.server.presentation
 
 import okhttp3.HttpUrl
 

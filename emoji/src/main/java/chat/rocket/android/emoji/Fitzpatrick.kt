@@ -1,4 +1,4 @@
-package chat.rocket.android.emoji
+package chat.dk.android.emoji
 
 /**
  * Taken the Fitzpatrick scale as reference and adapted to be used with emojione.

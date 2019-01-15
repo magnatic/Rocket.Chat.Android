@@ -1,7 +1,7 @@
-package chat.rocket.android.authentication.signup.presentation
+package chat.dk.android.authentication.signup.presentation
 
-import chat.rocket.android.core.behaviours.LoadingView
-import chat.rocket.android.core.behaviours.MessageView
+import chat.dk.android.core.behaviours.LoadingView
+import chat.dk.android.core.behaviours.MessageView
 
 interface SignupView : LoadingView, MessageView {
 

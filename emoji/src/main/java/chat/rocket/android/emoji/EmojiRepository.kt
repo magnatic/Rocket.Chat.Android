@@ -1,13 +1,13 @@
-package chat.rocket.android.emoji
+package chat.dk.android.emoji
 
 import android.content.Context
 import android.content.SharedPreferences
 import android.graphics.Typeface
 import android.util.Log
-import chat.rocket.android.emoji.internal.EmojiCategory
-import chat.rocket.android.emoji.internal.PREF_EMOJI_RECENTS
-import chat.rocket.android.emoji.internal.db.EmojiDatabase
-import chat.rocket.android.emoji.internal.isCustom
+import chat.dk.android.emoji.internal.EmojiCategory
+import chat.dk.android.emoji.internal.PREF_EMOJI_RECENTS
+import chat.dk.android.emoji.internal.db.EmojiDatabase
+import chat.dk.android.emoji.internal.isCustom
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.GlideException
 import kotlinx.coroutines.experimental.CommonPool

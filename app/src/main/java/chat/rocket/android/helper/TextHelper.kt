@@ -1,4 +1,4 @@
-package chat.rocket.android.helper
+package chat.dk.android.helper
 
 import android.os.Build
 import android.text.SpannableString
@@ -6,8 +6,8 @@ import android.text.Spanned
 import android.text.method.LinkMovementMethod
 import android.text.style.ClickableSpan
 import android.widget.TextView
-import chat.rocket.android.BuildConfig
-import chat.rocket.android.util.extensions.ifEmpty
+import chat.dk.android.BuildConfig
+import chat.dk.android.util.extensions.ifEmpty
 
 object TextHelper {
 

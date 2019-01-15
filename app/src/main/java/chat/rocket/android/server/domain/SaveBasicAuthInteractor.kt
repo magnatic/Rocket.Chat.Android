@@ -1,6 +1,6 @@
-package chat.rocket.android.server.domain
+package chat.dk.android.server.domain
 
-import chat.rocket.android.server.domain.model.BasicAuth
+import chat.dk.android.server.domain.model.BasicAuth
 import javax.inject.Inject
 
 class SaveBasicAuthInteractor @Inject constructor(val repository: BasicAuthRepository) {

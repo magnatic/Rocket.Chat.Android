@@ -1,9 +1,9 @@
-package chat.rocket.android.draw.main.presenter
+package chat.dk.android.draw.main.presenter
 
 import android.graphics.Bitmap
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.util.extension.compressImageAndGetByteArray
-import chat.rocket.android.util.extension.launchUI
+import chat.dk.android.core.lifecycle.CancelStrategy
+import chat.dk.android.util.extension.compressImageAndGetByteArray
+import chat.dk.android.util.extension.launchUI
 import javax.inject.Inject
 
 class DrawPresenter @Inject constructor(

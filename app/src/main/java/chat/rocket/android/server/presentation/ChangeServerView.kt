@@ -1,4 +1,4 @@
-package chat.rocket.android.server.presentation
+package chat.dk.android.server.presentation
 
 interface ChangeServerView {
     fun showInvalidCredentials()

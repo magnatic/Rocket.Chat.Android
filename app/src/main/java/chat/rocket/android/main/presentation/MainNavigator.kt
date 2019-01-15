@@ -1,20 +1,20 @@
-package chat.rocket.android.main.presentation
+package chat.dk.android.main.presentation
 
-import chat.rocket.android.R
-import chat.rocket.android.authentication.ui.newServerIntent
-import chat.rocket.android.chatroom.ui.chatRoomIntent
-import chat.rocket.android.chatrooms.ui.ChatRoomsFragment
-import chat.rocket.android.chatrooms.ui.TAG_CHAT_ROOMS_FRAGMENT
-import chat.rocket.android.createchannel.ui.CreateChannelFragment
-import chat.rocket.android.createchannel.ui.TAG_CREATE_CHANNEL_FRAGMENT
-import chat.rocket.android.main.ui.MainActivity
-import chat.rocket.android.profile.ui.ProfileFragment
-import chat.rocket.android.profile.ui.TAG_PROFILE_FRAGMENT
-import chat.rocket.android.server.ui.changeServerIntent
-import chat.rocket.android.settings.ui.SettingsFragment
-import chat.rocket.android.settings.ui.TAG_SETTINGS_FRAGMENT
-import chat.rocket.android.util.extensions.addFragment
-import chat.rocket.android.webview.adminpanel.ui.AdminPanelWebViewFragment
+import chat.dk.android.R
+import chat.dk.android.authentication.ui.newServerIntent
+import chat.dk.android.chatroom.ui.chatRoomIntent
+import chat.dk.android.chatrooms.ui.ChatRoomsFragment
+import chat.dk.android.chatrooms.ui.TAG_CHAT_ROOMS_FRAGMENT
+import chat.dk.android.createchannel.ui.CreateChannelFragment
+import chat.dk.android.createchannel.ui.TAG_CREATE_CHANNEL_FRAGMENT
+import chat.dk.android.main.ui.MainActivity
+import chat.dk.android.profile.ui.ProfileFragment
+import chat.dk.android.profile.ui.TAG_PROFILE_FRAGMENT
+import chat.dk.android.server.ui.changeServerIntent
+import chat.dk.android.settings.ui.SettingsFragment
+import chat.dk.android.settings.ui.TAG_SETTINGS_FRAGMENT
+import chat.dk.android.util.extensions.addFragment
+import chat.dk.android.webview.adminpanel.ui.AdminPanelWebViewFragment
 
 class MainNavigator(internal val activity: MainActivity) {
 

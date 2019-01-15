@@ -1,6 +1,6 @@
-package chat.rocket.android.preferences.presentation
+package chat.dk.android.preferences.presentation
 
-import chat.rocket.android.server.domain.AnalyticsTrackingInteractor
+import chat.dk.android.server.domain.AnalyticsTrackingInteractor
 import javax.inject.Inject
 
 class PreferencesPresenter @Inject constructor(

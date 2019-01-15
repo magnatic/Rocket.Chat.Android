@@ -1,4 +1,4 @@
-package chat.rocket.android.helper
+package chat.dk.android.helper
 
 import android.app.Activity
 import android.content.Intent

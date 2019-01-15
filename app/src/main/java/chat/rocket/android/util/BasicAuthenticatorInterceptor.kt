@@ -1,13 +1,13 @@
-package chat.rocket.android.util
+package chat.dk.android.util
 
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.Response
 import okhttp3.Credentials
 import java.io.IOException
-import chat.rocket.android.server.domain.model.BasicAuth
-import chat.rocket.android.server.domain.GetBasicAuthInteractor
-import chat.rocket.android.server.domain.SaveBasicAuthInteractor
+import chat.dk.android.server.domain.model.BasicAuth
+import chat.dk.android.server.domain.GetBasicAuthInteractor
+import chat.dk.android.server.domain.SaveBasicAuthInteractor
 
 import javax.inject.Inject
 

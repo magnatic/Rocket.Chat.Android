@@ -1,9 +1,9 @@
-package chat.rocket.android.authentication.signup.di
+package chat.dk.android.authentication.signup.di
 
 import androidx.lifecycle.LifecycleOwner
-import chat.rocket.android.authentication.signup.presentation.SignupView
-import chat.rocket.android.authentication.signup.ui.SignupFragment
-import chat.rocket.android.dagger.scope.PerFragment
+import chat.dk.android.authentication.signup.presentation.SignupView
+import chat.dk.android.authentication.signup.ui.SignupFragment
+import chat.dk.android.dagger.scope.PerFragment
 import dagger.Module
 import dagger.Provides
 

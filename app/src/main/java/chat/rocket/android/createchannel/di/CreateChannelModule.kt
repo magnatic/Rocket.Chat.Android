@@ -1,9 +1,9 @@
-package chat.rocket.android.createchannel.di
+package chat.dk.android.createchannel.di
 
 import androidx.lifecycle.LifecycleOwner
-import chat.rocket.android.createchannel.presentation.CreateChannelView
-import chat.rocket.android.createchannel.ui.CreateChannelFragment
-import chat.rocket.android.dagger.scope.PerFragment
+import chat.dk.android.createchannel.presentation.CreateChannelView
+import chat.dk.android.createchannel.ui.CreateChannelFragment
+import chat.dk.android.dagger.scope.PerFragment
 import dagger.Module
 import dagger.Provides
 

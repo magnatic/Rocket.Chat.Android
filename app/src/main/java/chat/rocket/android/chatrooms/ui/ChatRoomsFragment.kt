@@ -1,6 +1,6 @@
-package chat.rocket.android.chatrooms.ui
+package chat.dk.android.chatrooms.ui
 
-import androidx.appcompat.app.AlertDialog
+import android.app.AlertDialog
 import android.app.ProgressDialog
 import android.os.Bundle
 import android.os.Handler
@@ -20,28 +20,28 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
-import chat.rocket.android.R
-import chat.rocket.android.analytics.AnalyticsManager
-import chat.rocket.android.analytics.event.ScreenViewEvent
-import chat.rocket.android.chatrooms.adapter.RoomsAdapter
-import chat.rocket.android.chatrooms.presentation.ChatRoomsPresenter
-import chat.rocket.android.chatrooms.presentation.ChatRoomsView
-import chat.rocket.android.chatrooms.viewmodel.ChatRoomsViewModel
-import chat.rocket.android.chatrooms.viewmodel.ChatRoomsViewModelFactory
-import chat.rocket.android.chatrooms.viewmodel.LoadingState
-import chat.rocket.android.chatrooms.viewmodel.Query
-import chat.rocket.android.helper.ChatRoomsSortOrder
-import chat.rocket.android.helper.Constants
-import chat.rocket.android.helper.SharedPreferenceHelper
-import chat.rocket.android.util.extension.onQueryTextListener
-import chat.rocket.android.util.extensions.fadeIn
-import chat.rocket.android.util.extensions.fadeOut
-import chat.rocket.android.util.extensions.ifNotNullNorEmpty
-import chat.rocket.android.util.extensions.ifNotNullNotEmpty
-import chat.rocket.android.util.extensions.inflate
-import chat.rocket.android.util.extensions.showToast
-import chat.rocket.android.util.extensions.ui
-import chat.rocket.android.widget.DividerItemDecoration
+import chat.dk.android.R
+import chat.dk.android.analytics.AnalyticsManager
+import chat.dk.android.analytics.event.ScreenViewEvent
+import chat.dk.android.chatrooms.adapter.RoomsAdapter
+import chat.dk.android.chatrooms.presentation.ChatRoomsPresenter
+import chat.dk.android.chatrooms.presentation.ChatRoomsView
+import chat.dk.android.chatrooms.viewmodel.ChatRoomsViewModel
+import chat.dk.android.chatrooms.viewmodel.ChatRoomsViewModelFactory
+import chat.dk.android.chatrooms.viewmodel.LoadingState
+import chat.dk.android.chatrooms.viewmodel.Query
+import chat.dk.android.helper.ChatRoomsSortOrder
+import chat.dk.android.helper.Constants
+import chat.dk.android.helper.SharedPreferenceHelper
+import chat.dk.android.util.extension.onQueryTextListener
+import chat.dk.android.util.extensions.fadeIn
+import chat.dk.android.util.extensions.fadeOut
+import chat.dk.android.util.extensions.ifNotNullNorEmpty
+import chat.dk.android.util.extensions.ifNotNullNotEmpty
+import chat.dk.android.util.extensions.inflate
+import chat.dk.android.util.extensions.showToast
+import chat.dk.android.util.extensions.ui
+import chat.dk.android.widget.DividerItemDecoration
 import chat.rocket.core.internal.realtime.socket.model.State
 import dagger.android.support.AndroidSupportInjection
 import kotlinx.android.synthetic.main.fragment_chat_rooms.*
@@ -121,13 +121,16 @@ class ChatRoomsFragment : Fragment(), ChatRoomsView {
             }
 
             recycler_view.layoutManager = LinearLayoutManager(it)
-            recycler_view.addItemDecoration(
-                DividerItemDecoration(
-                    it,
-                    resources.getDimensionPixelSize(R.dimen.divider_item_decorator_bound_start),
-                    resources.getDimensionPixelSize(R.dimen.divider_item_decorator_bound_end)
-                )
-            )
+
+//          Добавляет разделить в списки
+
+//            recycler_view.addItemDecoration(
+//                DividerItemDecoration(
+//                    it,
+//                    resources.getDimensionPixelSize(R.dimen.divider_item_decorator_bound_start),
+//                    resources.getDimensionPixelSize(R.dimen.divider_item_decorator_bound_end)
+//                )
+//            )
             recycler_view.itemAnimator = DefaultItemAnimator()
             recycler_view.adapter = adapter
 
@@ -236,16 +239,14 @@ class ChatRoomsFragment : Fragment(), ChatRoomsView {
                     )
                 }
 
-                context?.let {
-                    AlertDialog.Builder(it)
-                        .setTitle(R.string.dialog_sort_title)
-                        .setView(dialogLayout)
-                        .setPositiveButton(R.string.msg_sort) { dialog, _ ->
-                            invalidateQueryOnSearch()
-                            updateSort()
-                            dialog.dismiss()
-                        }.show()
-                }
+                AlertDialog.Builder(context)
+                    .setTitle(R.string.dialog_sort_title)
+                    .setView(dialogLayout)
+                    .setPositiveButton(R.string.msg_sort) { dialog, _ ->
+                        invalidateQueryOnSearch()
+                        updateSort()
+                        dialog.dismiss()
+                    }.show()
             }
         }
         return super.onOptionsItemSelected(item)

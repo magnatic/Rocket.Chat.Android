@@ -1,8 +1,8 @@
-package chat.rocket.android.createchannel.presentation
+package chat.dk.android.createchannel.presentation
 
-import chat.rocket.android.core.behaviours.LoadingView
-import chat.rocket.android.core.behaviours.MessageView
-import chat.rocket.android.members.uimodel.MemberUiModel
+import chat.dk.android.core.behaviours.LoadingView
+import chat.dk.android.core.behaviours.MessageView
+import chat.dk.android.members.uimodel.MemberUiModel
 
 interface CreateChannelView : LoadingView, MessageView {
 

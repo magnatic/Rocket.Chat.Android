@@ -1,4 +1,4 @@
-package chat.rocket.android.util.extensions
+package chat.dk.android.util.extensions
 
 inline fun <T, reified R> List<T>.mapToTypedArray(transform: (T) -> R): Array<R> {
     return when (this) {

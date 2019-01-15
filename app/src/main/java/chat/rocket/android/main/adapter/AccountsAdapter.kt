@@ -1,10 +1,10 @@
-package chat.rocket.android.main.adapter
+package chat.dk.android.main.adapter
 
 import androidx.recyclerview.widget.RecyclerView
 import android.view.ViewGroup
-import chat.rocket.android.R
-import chat.rocket.android.server.domain.model.Account
-import chat.rocket.android.util.extensions.inflate
+import chat.dk.android.R
+import chat.dk.android.server.domain.model.Account
+import chat.dk.android.util.extensions.inflate
 import chat.rocket.common.model.UserStatus
 
 private const val VIEW_TYPE_CHANGE_STATUS = 0

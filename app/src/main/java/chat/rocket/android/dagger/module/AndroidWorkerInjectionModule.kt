@@ -1,4 +1,4 @@
-package chat.rocket.android.dagger.module
+package chat.dk.android.dagger.module
 
 import androidx.work.Worker
 import dagger.Module

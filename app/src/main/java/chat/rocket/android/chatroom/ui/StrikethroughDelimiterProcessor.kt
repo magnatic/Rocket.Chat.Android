@@ -1,4 +1,4 @@
-package chat.rocket.android.chatroom.ui
+package chat.dk.android.chatroom.ui
 
 import org.commonmark.ext.gfm.strikethrough.Strikethrough
 import org.commonmark.node.Node

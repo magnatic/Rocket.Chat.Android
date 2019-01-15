@@ -1,6 +1,6 @@
-package chat.rocket.android.server.domain
+package chat.dk.android.server.domain
 
-import chat.rocket.android.dagger.qualifier.ForAuthentication
+import chat.dk.android.dagger.qualifier.ForAuthentication
 import javax.inject.Inject
 
 class SaveConnectingServerInteractor @Inject constructor(

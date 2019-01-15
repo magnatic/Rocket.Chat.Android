@@ -1,4 +1,4 @@
-package chat.rocket.android.wear
+package chat.dk.android.wear
 
 import android.os.Bundle
 import android.support.wearable.activity.WearableActivity

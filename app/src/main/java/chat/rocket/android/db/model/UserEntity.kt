@@ -1,4 +1,4 @@
-package chat.rocket.android.db.model
+package chat.dk.android.db.model
 
 import androidx.room.Entity
 import androidx.room.Index

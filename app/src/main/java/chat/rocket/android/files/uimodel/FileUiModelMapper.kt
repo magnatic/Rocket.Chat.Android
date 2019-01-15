@@ -1,9 +1,9 @@
-package chat.rocket.android.files.uimodel
+package chat.dk.android.files.uimodel
 
-import chat.rocket.android.server.domain.GetCurrentServerInteractor
-import chat.rocket.android.server.domain.GetSettingsInteractor
-import chat.rocket.android.server.domain.TokenRepository
-import chat.rocket.android.server.domain.baseUrl
+import chat.dk.android.server.domain.GetCurrentServerInteractor
+import chat.dk.android.server.domain.GetSettingsInteractor
+import chat.dk.android.server.domain.TokenRepository
+import chat.dk.android.server.domain.baseUrl
 import chat.rocket.core.model.Value
 import chat.rocket.core.model.attachment.GenericAttachment
 import javax.inject.Inject

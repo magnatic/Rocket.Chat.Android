@@ -1,4 +1,4 @@
-package chat.rocket.android.files.ui
+package chat.dk.android.files.ui
 
 import android.content.Intent
 import android.net.Uri
@@ -12,20 +12,20 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.DividerItemDecoration.HORIZONTAL
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import chat.rocket.android.R
-import chat.rocket.android.analytics.AnalyticsManager
-import chat.rocket.android.analytics.event.ScreenViewEvent
-import chat.rocket.android.chatroom.ui.ChatRoomActivity
-import chat.rocket.android.files.adapter.FilesAdapter
-import chat.rocket.android.files.presentation.FilesPresenter
-import chat.rocket.android.files.presentation.FilesView
-import chat.rocket.android.files.uimodel.FileUiModel
-import chat.rocket.android.helper.EndlessRecyclerViewScrollListener
-import chat.rocket.android.helper.ImageHelper
-import chat.rocket.android.player.PlayerActivity
-import chat.rocket.android.util.extensions.inflate
-import chat.rocket.android.util.extensions.showToast
-import chat.rocket.android.util.extensions.ui
+import chat.dk.android.R
+import chat.dk.android.analytics.AnalyticsManager
+import chat.dk.android.analytics.event.ScreenViewEvent
+import chat.dk.android.chatdetails.ui.ChatDetailsActivity
+import chat.dk.android.files.adapter.FilesAdapter
+import chat.dk.android.files.presentation.FilesPresenter
+import chat.dk.android.files.presentation.FilesView
+import chat.dk.android.files.uimodel.FileUiModel
+import chat.dk.android.helper.EndlessRecyclerViewScrollListener
+import chat.dk.android.helper.ImageHelper
+import chat.dk.android.player.PlayerActivity
+import chat.dk.android.util.extensions.inflate
+import chat.dk.android.util.extensions.showToast
+import chat.dk.android.util.extensions.ui
 import dagger.android.support.AndroidSupportInjection
 import kotlinx.android.synthetic.main.fragment_files.*
 import javax.inject.Inject
@@ -152,11 +152,9 @@ class FilesFragment : Fragment(), FilesView {
     }
 
     private fun setupToolbar(totalFiles: Long) {
-        (activity as ChatRoomActivity).showToolbarTitle(
-            (getString(
-                R.string.title_files_total,
-                totalFiles
-            ))
-        )
+        (activity as ChatDetailsActivity).let {
+            it.setToolbarTitle(getString(R.string.title_files_total, totalFiles))
+            it.setNavigationIcon(R.drawable.ic_arrow_back_white_24dp)
+        }
     }
 }

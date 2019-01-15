@@ -1,4 +1,4 @@
-package chat.rocket.android.db.model
+package chat.dk.android.db.model
 
 import androidx.room.Embedded
 import androidx.room.Entity
@@ -6,7 +6,7 @@ import androidx.room.ForeignKey
 import androidx.room.Index
 import androidx.room.PrimaryKey
 import androidx.room.TypeConverters
-import chat.rocket.android.emoji.internal.db.StringListConverter
+import chat.dk.android.emoji.internal.db.StringListConverter
 
 @Entity(tableName = "chatrooms",
         indices = [

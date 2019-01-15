@@ -1,4 +1,4 @@
-package chat.rocket.android.core.lifecycle
+package chat.dk.android.core.lifecycle
 
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver

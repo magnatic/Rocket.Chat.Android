@@ -1,8 +1,8 @@
-package chat.rocket.android.server.infraestructure
+package chat.dk.android.server.infraestructure
 
 import android.app.job.JobInfo
 import android.app.job.JobScheduler
-import chat.rocket.android.server.domain.JobSchedulerInteractor
+import chat.dk.android.server.domain.JobSchedulerInteractor
 import timber.log.Timber
 import javax.inject.Inject
 

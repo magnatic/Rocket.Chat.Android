@@ -1,9 +1,9 @@
-package chat.rocket.android.authentication.onboarding.di
+package chat.dk.android.authentication.onboarding.di
 
 import androidx.lifecycle.LifecycleOwner
-import chat.rocket.android.authentication.onboarding.presentation.OnBoardingView
-import chat.rocket.android.authentication.onboarding.ui.OnBoardingFragment
-import chat.rocket.android.dagger.scope.PerFragment
+import chat.dk.android.authentication.onboarding.presentation.OnBoardingView
+import chat.dk.android.authentication.onboarding.ui.OnBoardingFragment
+import chat.dk.android.dagger.scope.PerFragment
 import dagger.Module
 import dagger.Provides
 

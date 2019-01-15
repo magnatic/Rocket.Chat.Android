@@ -1,4 +1,4 @@
-package chat.rocket.android.emoji.internal
+package chat.dk.android.emoji.internal
 
 import android.content.Context
 import com.bumptech.glide.GlideBuilder

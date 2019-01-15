@@ -1,24 +1,24 @@
-package chat.rocket.android.db
+package chat.dk.android.db
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Transaction
-import chat.rocket.android.db.model.AttachmentActionEntity
-import chat.rocket.android.db.model.AttachmentEntity
-import chat.rocket.android.db.model.AttachmentFieldEntity
-import chat.rocket.android.db.model.BaseMessageEntity
-import chat.rocket.android.db.model.FullMessage
-import chat.rocket.android.db.model.PartialMessage
-import chat.rocket.android.db.model.MessageChannels
-import chat.rocket.android.db.model.MessageEntity
-import chat.rocket.android.db.model.MessageFavoritesRelation
-import chat.rocket.android.db.model.MessageMentionsRelation
-import chat.rocket.android.db.model.MessagesSync
-import chat.rocket.android.db.model.ReactionEntity
-import chat.rocket.android.db.model.UrlEntity
-import chat.rocket.android.db.model.UserEntity
+import chat.dk.android.db.model.AttachmentActionEntity
+import chat.dk.android.db.model.AttachmentEntity
+import chat.dk.android.db.model.AttachmentFieldEntity
+import chat.dk.android.db.model.BaseMessageEntity
+import chat.dk.android.db.model.FullMessage
+import chat.dk.android.db.model.PartialMessage
+import chat.dk.android.db.model.MessageChannels
+import chat.dk.android.db.model.MessageEntity
+import chat.dk.android.db.model.MessageFavoritesRelation
+import chat.dk.android.db.model.MessageMentionsRelation
+import chat.dk.android.db.model.MessagesSync
+import chat.dk.android.db.model.ReactionEntity
+import chat.dk.android.db.model.UrlEntity
+import chat.dk.android.db.model.UserEntity
 import timber.log.Timber
 @Dao
 abstract class  MessageDao {

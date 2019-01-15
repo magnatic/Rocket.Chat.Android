@@ -1,9 +1,9 @@
-package chat.rocket.android.files.uimodel
+package chat.dk.android.files.uimodel
 
 import DateTimeHelper
-import chat.rocket.android.server.domain.TokenRepository
-import chat.rocket.android.server.domain.useRealName
-import chat.rocket.android.util.extensions.fileUrl
+import chat.dk.android.server.domain.TokenRepository
+import chat.dk.android.server.domain.useRealName
+import chat.dk.android.util.extensions.fileUrl
 import chat.rocket.core.model.Value
 import chat.rocket.core.model.attachment.GenericAttachment
 

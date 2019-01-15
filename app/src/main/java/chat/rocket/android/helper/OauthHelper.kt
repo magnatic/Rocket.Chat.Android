@@ -1,8 +1,8 @@
-package chat.rocket.android.helper
+package chat.dk.android.helper
 
-import chat.rocket.android.util.extensions.encodeToBase64
-import chat.rocket.android.util.extensions.generateRandomString
-import chat.rocket.android.util.extensions.removeTrailingSlash
+import chat.dk.android.util.extensions.encodeToBase64
+import chat.dk.android.util.extensions.generateRandomString
+import chat.dk.android.util.extensions.removeTrailingSlash
 
 object OauthHelper {
 

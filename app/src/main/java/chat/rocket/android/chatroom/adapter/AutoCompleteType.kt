@@ -1,4 +1,4 @@
-package chat.rocket.android.chatroom.adapter
+package chat.dk.android.chatroom.adapter
 
 import androidx.annotation.IntDef
 

@@ -1,4 +1,4 @@
-package chat.rocket.android.push
+package chat.dk.android.push
 
 import android.content.BroadcastReceiver
 import android.content.Context

@@ -1,4 +1,4 @@
-package chat.rocket.android.main.uimodel
+package chat.dk.android.main.uimodel
 
 import chat.rocket.common.model.UserStatus
 

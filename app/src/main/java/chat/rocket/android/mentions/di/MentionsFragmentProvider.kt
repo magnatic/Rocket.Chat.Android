@@ -1,7 +1,7 @@
-package chat.rocket.android.mentions.di
+package chat.dk.android.mentions.di
 
-import chat.rocket.android.dagger.scope.PerFragment
-import chat.rocket.android.mentions.ui.MentionsFragment
+import chat.dk.android.dagger.scope.PerFragment
+import chat.dk.android.mentions.ui.MentionsFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

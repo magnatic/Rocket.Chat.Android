@@ -3,7 +3,7 @@ import android.graphics.drawable.Drawable
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.DrawableCompat
 import android.widget.TextView
-import chat.rocket.android.R
+import chat.dk.android.R
 import chat.rocket.common.model.UserStatus
 
 object DrawableHelper {

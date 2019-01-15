@@ -1,6 +1,6 @@
-package chat.rocket.android.push.di
+package chat.dk.android.push.di
 
-import chat.rocket.android.push.worker.TokenRegistrationWorker
+import chat.dk.android.push.worker.TokenRegistrationWorker
 import dagger.Subcomponent
 import dagger.android.AndroidInjector
 

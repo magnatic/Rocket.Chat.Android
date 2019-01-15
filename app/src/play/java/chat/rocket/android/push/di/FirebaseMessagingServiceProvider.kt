@@ -1,7 +1,7 @@
-package chat.rocket.android.push.di
+package chat.dk.android.push.di
 
-import chat.rocket.android.dagger.module.AppModule
-import chat.rocket.android.push.FirebaseMessagingService
+import chat.dk.android.dagger.module.AppModule
+import chat.dk.android.push.FirebaseMessagingService
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

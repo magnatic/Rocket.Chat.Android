@@ -1,4 +1,4 @@
-package chat.rocket.android.infrastructure
+package chat.dk.android.infrastructure
 
 import android.content.SharedPreferences
 import androidx.core.content.edit

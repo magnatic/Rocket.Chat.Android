@@ -67,6 +67,7 @@
                 style="@style/ChatDetails.Content.TextView"
                 android:text="@string/msg_no_description" />
         </RelativeLayout>
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/options"
             android:layout_width="match_parent"

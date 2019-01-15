@@ -16,11 +16,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package chat.rocket.android.emoji
+package chat.dk.android.emoji
 
 import android.content.Context
 import android.graphics.Point
 import android.graphics.Rect
+import android.os.Build
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View

@@ -1,4 +1,4 @@
-package chat.rocket.android.chatroom.ui
+package chat.dk.android.chatroom.ui
 
 import android.content.Intent
 import androidx.test.espresso.intent.rule.IntentsTestRule

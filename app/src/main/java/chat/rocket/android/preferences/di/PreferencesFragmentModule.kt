@@ -1,8 +1,8 @@
-package chat.rocket.android.preferences.di
+package chat.dk.android.preferences.di
 
-import chat.rocket.android.dagger.scope.PerFragment
-import chat.rocket.android.preferences.presentation.PreferencesView
-import chat.rocket.android.preferences.ui.PreferencesFragment
+import chat.dk.android.dagger.scope.PerFragment
+import chat.dk.android.preferences.presentation.PreferencesView
+import chat.dk.android.preferences.ui.PreferencesFragment
 import dagger.Module
 import dagger.Provides
 

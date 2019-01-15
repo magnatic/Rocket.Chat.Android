@@ -1,4 +1,4 @@
-package chat.rocket.android.chatdetails.domain
+package chat.dk.android.chatdetails.domain
 
 data class Option(
     val name: String,

@@ -1,4 +1,4 @@
-package chat.rocket.android.chatroom.ui
+package chat.dk.android.chatroom.ui
 
 import android.text.Spannable
 import android.text.SpannableStringBuilder
@@ -9,9 +9,9 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.setPadding
-import chat.rocket.android.R
-import chat.rocket.android.helper.MessageParser
-import chat.rocket.android.util.extensions.content
+import chat.dk.android.R
+import chat.dk.android.helper.MessageParser
+import chat.dk.android.util.extensions.content
 import com.google.android.material.snackbar.BaseTransientBottomBar
 import kotlinx.android.synthetic.main.message_action_bar.view.*
 import ru.noties.markwon.Markwon

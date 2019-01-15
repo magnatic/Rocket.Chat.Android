@@ -1,7 +1,7 @@
-package chat.rocket.android.push.di
+package chat.dk.android.push.di
 
-import chat.rocket.android.dagger.module.AppModule
-import chat.rocket.android.push.DeleteReceiver
+import chat.dk.android.dagger.module.AppModule
+import chat.dk.android.push.DeleteReceiver
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

@@ -1,4 +1,4 @@
-package chat.rocket.android.extensions
+package chat.dk.android.extensions
 
 import com.google.android.gms.tasks.Task
 import kotlin.coroutines.experimental.suspendCoroutine

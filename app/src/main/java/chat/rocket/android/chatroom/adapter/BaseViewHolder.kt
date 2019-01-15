@@ -1,4 +1,4 @@
-package chat.rocket.android.chatroom.adapter
+package chat.dk.android.chatroom.adapter
 
 import android.view.ContextThemeWrapper
 import android.view.MenuItem
@@ -8,13 +8,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.children
 import androidx.lifecycle.Lifecycle
 import androidx.recyclerview.widget.RecyclerView
-import chat.rocket.android.R
-import chat.rocket.android.chatroom.ui.bottomsheet.MessageActionsBottomSheet
-import chat.rocket.android.chatroom.uimodel.BaseUiModel
-import chat.rocket.android.emoji.Emoji
-import chat.rocket.android.emoji.EmojiReactionListener
-import chat.rocket.android.util.extensions.inflate
-import chat.rocket.android.util.extensions.toList
+import chat.dk.android.R
+import chat.dk.android.chatroom.ui.bottomsheet.MessageActionsBottomSheet
+import chat.dk.android.chatroom.uimodel.BaseUiModel
+import chat.dk.android.emoji.Emoji
+import chat.dk.android.emoji.EmojiReactionListener
+import chat.dk.android.util.extensions.inflate
+import chat.dk.android.util.extensions.toList
 import chat.rocket.core.model.Message
 import chat.rocket.core.model.isSystemMessage
 import com.google.android.flexbox.FlexDirection

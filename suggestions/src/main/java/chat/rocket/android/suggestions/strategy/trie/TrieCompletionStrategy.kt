@@ -1,8 +1,8 @@
-package chat.rocket.android.suggestions.strategy.trie
+package chat.dk.android.suggestions.strategy.trie
 
-import chat.rocket.android.suggestions.model.SuggestionModel
-import chat.rocket.android.suggestions.strategy.CompletionStrategy
-import chat.rocket.android.suggestions.strategy.trie.data.Trie
+import chat.dk.android.suggestions.model.SuggestionModel
+import chat.dk.android.suggestions.strategy.CompletionStrategy
+import chat.dk.android.suggestions.strategy.trie.data.Trie
 
 class TrieCompletionStrategy : CompletionStrategy {
     private val items = mutableListOf<SuggestionModel>()

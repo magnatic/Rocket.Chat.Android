@@ -1,8 +1,8 @@
-package chat.rocket.android.chatroom.domain
+package chat.dk.android.chatroom.domain
 
 import android.content.Context
 import android.net.Uri
-import chat.rocket.android.util.extensions.*
+import chat.dk.android.util.extensions.*
 import javax.inject.Inject
 
 class UriInteractor @Inject constructor(private val context: Context) {

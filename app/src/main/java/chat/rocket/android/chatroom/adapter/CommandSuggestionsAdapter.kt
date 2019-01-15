@@ -1,15 +1,15 @@
-package chat.rocket.android.chatroom.adapter
+package chat.dk.android.chatroom.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import chat.rocket.android.R
-import chat.rocket.android.chatroom.adapter.CommandSuggestionsAdapter.CommandSuggestionsViewHolder
-import chat.rocket.android.chatroom.uimodel.suggestion.CommandSuggestionUiModel
-import chat.rocket.android.suggestions.model.SuggestionModel
-import chat.rocket.android.suggestions.ui.BaseSuggestionViewHolder
-import chat.rocket.android.suggestions.ui.SuggestionsAdapter
+import chat.dk.android.R
+import chat.dk.android.chatroom.adapter.CommandSuggestionsAdapter.CommandSuggestionsViewHolder
+import chat.dk.android.chatroom.uimodel.suggestion.CommandSuggestionUiModel
+import chat.dk.android.suggestions.model.SuggestionModel
+import chat.dk.android.suggestions.ui.BaseSuggestionViewHolder
+import chat.dk.android.suggestions.ui.SuggestionsAdapter
 
 class CommandSuggestionsAdapter : SuggestionsAdapter<CommandSuggestionsViewHolder>(token = "/",
         constraint = CONSTRAINT_BOUND_TO_START, threshold = RESULT_COUNT_UNLIMITED) {

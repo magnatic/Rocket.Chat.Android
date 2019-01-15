@@ -1,9 +1,9 @@
-package chat.rocket.android.draw.main.di
+package chat.dk.android.draw.main.di
 
 import androidx.lifecycle.LifecycleOwner
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.draw.main.presenter.DrawView
-import chat.rocket.android.draw.main.ui.DrawingActivity
+import chat.dk.android.core.lifecycle.CancelStrategy
+import chat.dk.android.draw.main.presenter.DrawView
+import chat.dk.android.draw.main.ui.DrawingActivity
 import dagger.Module
 import dagger.Provides
 import kotlinx.coroutines.experimental.Job

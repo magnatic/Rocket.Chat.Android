@@ -1,4 +1,4 @@
-package chat.rocket.android.analytics
+package chat.dk.android.analytics
 
 import android.content.Context
 import javax.inject.Inject

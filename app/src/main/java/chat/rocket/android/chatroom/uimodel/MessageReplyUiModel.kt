@@ -1,7 +1,7 @@
-package chat.rocket.android.chatroom.uimodel
+package chat.dk.android.chatroom.uimodel
 
-import chat.rocket.android.R
-import chat.rocket.android.chatroom.domain.MessageReply
+import chat.dk.android.R
+import chat.dk.android.chatroom.domain.MessageReply
 import chat.rocket.core.model.Message
 
 data class MessageReplyUiModel(

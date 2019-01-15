@@ -1,4 +1,4 @@
-package chat.rocket.android.helper
+package chat.dk.android.helper
 
 import com.crashlytics.android.Crashlytics
 import timber.log.Timber

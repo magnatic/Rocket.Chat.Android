@@ -1,7 +1,7 @@
-package chat.rocket.android.authentication.resetpassword.presentation
+package chat.dk.android.authentication.resetpassword.presentation
 
-import chat.rocket.android.core.behaviours.LoadingView
-import chat.rocket.android.core.behaviours.MessageView
+import chat.dk.android.core.behaviours.LoadingView
+import chat.dk.android.core.behaviours.MessageView
 
 interface ResetPasswordView : LoadingView, MessageView {
 

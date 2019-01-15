@@ -1,6 +1,6 @@
-package chat.rocket.android.webview.adminpanel.di
+package chat.dk.android.webview.adminpanel.di
 
-import chat.rocket.android.webview.adminpanel.ui.AdminPanelWebViewFragment
+import chat.dk.android.webview.adminpanel.ui.AdminPanelWebViewFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

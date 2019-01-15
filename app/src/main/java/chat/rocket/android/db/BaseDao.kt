@@ -1,4 +1,4 @@
-package chat.rocket.android.db
+package chat.dk.android.db
 
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy

@@ -1,6 +1,6 @@
-package chat.rocket.android.draw
+package chat.dk.android.draw
 
-import chat.rocket.android.draw.dagger.DaggerAppComponent
+import chat.dk.android.draw.dagger.DaggerAppComponent
 import dagger.android.AndroidInjector
 import dagger.android.support.DaggerApplication
 

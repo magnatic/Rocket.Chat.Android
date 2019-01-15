@@ -1,21 +1,21 @@
-package chat.rocket.android.authentication.presentation
+package chat.dk.android.authentication.presentation
 
 import android.content.Intent
-import chat.rocket.android.R
-import chat.rocket.android.analytics.event.ScreenViewEvent
-import chat.rocket.android.authentication.domain.model.LoginDeepLinkInfo
-import chat.rocket.android.authentication.ui.AuthenticationActivity
-import chat.rocket.android.main.ui.MainActivity
-import chat.rocket.android.server.ui.changeServerIntent
-import chat.rocket.android.util.extensions.addFragmentBackStack
-import chat.rocket.android.util.extensions.toPreviousView
-import chat.rocket.android.webview.ui.webViewIntent
+import chat.dk.android.R
+import chat.dk.android.analytics.event.ScreenViewEvent
+import chat.dk.android.authentication.domain.model.LoginDeepLinkInfo
+import chat.dk.android.authentication.ui.AuthenticationActivity
+import chat.dk.android.main.ui.MainActivity
+import chat.dk.android.server.ui.changeServerIntent
+import chat.dk.android.util.extensions.addFragmentBackStack
+import chat.dk.android.util.extensions.toPreviousView
+import chat.dk.android.webview.ui.webViewIntent
 
 class AuthenticationNavigator(internal val activity: AuthenticationActivity) {
 
     fun toSignInToYourServer() {
         activity.addFragmentBackStack(ScreenViewEvent.Server.screenName, R.id.fragment_container) {
-            chat.rocket.android.authentication.server.ui.newInstance()
+            chat.dk.android.authentication.server.ui.newInstance()
         }
     }
 
@@ -51,7 +51,7 @@ class AuthenticationNavigator(internal val activity: AuthenticationActivity) {
             ScreenViewEvent.LoginOptions.screenName,
             R.id.fragment_container
         ) {
-            chat.rocket.android.authentication.loginoptions.ui.newInstance(
+            chat.dk.android.authentication.loginoptions.ui.newInstance(
                 serverUrl,
                 state,
                 facebookOauthUrl,
@@ -84,19 +84,19 @@ class AuthenticationNavigator(internal val activity: AuthenticationActivity) {
 
     fun toTwoFA(username: String, password: String) {
         activity.addFragmentBackStack(ScreenViewEvent.TwoFa.screenName, R.id.fragment_container) {
-            chat.rocket.android.authentication.twofactor.ui.newInstance(username, password)
+            chat.dk.android.authentication.twofactor.ui.newInstance(username, password)
         }
     }
 
     fun toCreateAccount() {
         activity.addFragmentBackStack(ScreenViewEvent.SignUp.screenName, R.id.fragment_container) {
-            chat.rocket.android.authentication.signup.ui.newInstance()
+            chat.dk.android.authentication.signup.ui.newInstance()
         }
     }
 
     fun toLogin(serverUrl: String) {
         activity.addFragmentBackStack(ScreenViewEvent.Login.screenName, R.id.fragment_container) {
-            chat.rocket.android.authentication.login.ui.newInstance(serverUrl)
+            chat.dk.android.authentication.login.ui.newInstance(serverUrl)
         }
     }
 
@@ -105,7 +105,7 @@ class AuthenticationNavigator(internal val activity: AuthenticationActivity) {
             ScreenViewEvent.ResetPassword.screenName,
             R.id.fragment_container
         ) {
-            chat.rocket.android.authentication.resetpassword.ui.newInstance()
+            chat.dk.android.authentication.resetpassword.ui.newInstance()
         }
     }
 
@@ -118,7 +118,7 @@ class AuthenticationNavigator(internal val activity: AuthenticationActivity) {
             ScreenViewEvent.RegisterUsername.screenName,
             R.id.fragment_container
         ) {
-            chat.rocket.android.authentication.registerusername.ui.newInstance(userId, authToken)
+            chat.dk.android.authentication.registerusername.ui.newInstance(userId, authToken)
         }
     }
 

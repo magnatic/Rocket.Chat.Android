@@ -1,8 +1,8 @@
-package chat.rocket.android.profile.ui
+package chat.dk.android.profile.ui
 
 import DrawableHelper
 import android.app.Activity
-import androidx.appcompat.app.AlertDialog
+import android.app.AlertDialog
 import android.content.Intent
 import android.graphics.Bitmap
 import android.os.Build
@@ -19,20 +19,20 @@ import androidx.appcompat.view.ActionMode
 import androidx.core.net.toUri
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
-import chat.rocket.android.R
-import chat.rocket.android.analytics.AnalyticsManager
-import chat.rocket.android.analytics.event.ScreenViewEvent
-import chat.rocket.android.main.ui.MainActivity
-import chat.rocket.android.profile.presentation.ProfilePresenter
-import chat.rocket.android.profile.presentation.ProfileView
-import chat.rocket.android.util.extension.asObservable
-import chat.rocket.android.util.extension.dispatchImageSelection
-import chat.rocket.android.util.extension.dispatchTakePicture
-import chat.rocket.android.util.extensions.inflate
-import chat.rocket.android.util.extensions.showToast
-import chat.rocket.android.util.extensions.textContent
-import chat.rocket.android.util.extensions.ui
-import chat.rocket.android.util.invalidateFirebaseToken
+import chat.dk.android.R
+import chat.dk.android.analytics.AnalyticsManager
+import chat.dk.android.analytics.event.ScreenViewEvent
+import chat.dk.android.main.ui.MainActivity
+import chat.dk.android.profile.presentation.ProfilePresenter
+import chat.dk.android.profile.presentation.ProfileView
+import chat.dk.android.util.extension.asObservable
+import chat.dk.android.util.extension.dispatchImageSelection
+import chat.dk.android.util.extension.dispatchTakePicture
+import chat.dk.android.util.extensions.inflate
+import chat.dk.android.util.extensions.showToast
+import chat.dk.android.util.extensions.textContent
+import chat.dk.android.util.extensions.ui
+import chat.dk.android.util.invalidateFirebaseToken
 import com.facebook.drawee.backends.pipeline.Fresco
 import dagger.android.support.AndroidSupportInjection
 import io.reactivex.disposables.CompositeDisposable
@@ -296,16 +296,14 @@ class ProfileFragment : Fragment(), ProfileView, ActionMode.Callback {
         val passwordEditText = EditText(context)
         passwordEditText.hint = getString(R.string.msg_password)
 
-        context?.let {
-            val builder = AlertDialog.Builder(it)
-            builder.setTitle(R.string.title_are_you_sure)
-                .setView(passwordEditText)
-                .setPositiveButton(R.string.action_delete_account) { _, _ ->
-                    presenter.deleteAccount(passwordEditText.text.toString())
-                }
-                .setNegativeButton(android.R.string.no) { dialog, _ -> dialog.cancel() }
-                .create()
-                .show()
-        }
+        val builder = AlertDialog.Builder(context)
+        builder.setTitle(R.string.title_are_you_sure)
+            .setView(passwordEditText)
+            .setPositiveButton(R.string.action_delete_account) { _, _ ->
+                presenter.deleteAccount(passwordEditText.text.toString())
+            }
+            .setNegativeButton(android.R.string.no) { dialog, _ -> dialog.cancel() }
+            .create()
+            .show()
     }
 }

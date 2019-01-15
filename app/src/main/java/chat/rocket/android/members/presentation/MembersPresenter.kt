@@ -1,12 +1,12 @@
-package chat.rocket.android.members.presentation
+package chat.dk.android.members.presentation
 
-import chat.rocket.android.chatroom.presentation.ChatRoomNavigator
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.db.DatabaseManager
-import chat.rocket.android.members.uimodel.MemberUiModel
-import chat.rocket.android.members.uimodel.MemberUiModelMapper
-import chat.rocket.android.server.infraestructure.RocketChatClientFactory
-import chat.rocket.android.util.extension.launchUI
+import chat.dk.android.core.lifecycle.CancelStrategy
+import chat.dk.android.db.DatabaseManager
+import chat.dk.android.members.uimodel.MemberUiModel
+import chat.dk.android.members.uimodel.MemberUiModelMapper
+import chat.dk.android.server.infraestructure.RocketChatClientFactory
+import chat.dk.android.util.extension.launchUI
+import chat.dk.android.util.retryDB
 import chat.rocket.common.RocketChatException
 import chat.rocket.common.model.roomTypeOf
 import chat.rocket.common.util.ifNull
@@ -18,7 +18,7 @@ import javax.inject.Named
 
 class MembersPresenter @Inject constructor(
     private val view: MembersView,
-    private val navigator: ChatRoomNavigator,
+    private val navigator: MembersNavigator,
     private val dbManager: DatabaseManager,
     @Named("currentServer") private val currentServer: String,
     private val strategy: CancelStrategy,

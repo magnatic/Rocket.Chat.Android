@@ -1,11 +1,11 @@
-package chat.rocket.android.chatinformation.presentation
+package chat.dk.android.chatinformation.presentation
 
-import chat.rocket.android.chatroom.uimodel.UiModelMapper
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.server.domain.GetCurrentServerInteractor
-import chat.rocket.android.server.infraestructure.ConnectionManagerFactory
-import chat.rocket.android.util.extension.launchUI
-import chat.rocket.android.util.retryIO
+import chat.dk.android.chatroom.uimodel.UiModelMapper
+import chat.dk.android.core.lifecycle.CancelStrategy
+import chat.dk.android.server.domain.GetCurrentServerInteractor
+import chat.dk.android.server.infraestructure.ConnectionManagerFactory
+import chat.dk.android.util.extension.launchUI
+import chat.dk.android.util.retryIO
 import chat.rocket.common.RocketChatException
 import chat.rocket.core.internal.rest.getMessageReadReceipts
 import timber.log.Timber

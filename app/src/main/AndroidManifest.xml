@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="chat.rocket.android">
+    package="chat.dk.android">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -79,6 +79,11 @@
             android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
 
         <activity
+            android:name=".chatdetails.ui.ChatDetailsActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+
+        <activity
             android:name=".chatinformation.ui.MessageInfoActivity"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
@@ -88,12 +93,22 @@
             android:name=".settings.password.ui.PasswordActivity"
             android:theme="@style/AppTheme" />
 
+        <activity
+            android:name=".userdetails.ui.UserDetailsActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".chatroom.ui.ChatRoomActivity" />
+        </activity>
+
         <receiver
             android:name=".push.DirectReplyReceiver"
             android:enabled="true"
             android:exported="false">
             <intent-filter>
-                <action android:name="chat.rocket.android.ACTION_REPLY" />
+                <action android:name="chat.dk.android.ACTION_REPLY" />
             </intent-filter>
         </receiver>
 
@@ -108,7 +123,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="chat.rocket.android.fileprovider"
+            android:authorities="chat.dk.android.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

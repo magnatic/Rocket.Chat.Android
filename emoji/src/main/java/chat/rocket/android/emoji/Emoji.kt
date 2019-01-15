@@ -1,4 +1,4 @@
-package chat.rocket.android.emoji
+package chat.dk.android.emoji
 
 import androidx.room.Entity
 import androidx.room.Ignore

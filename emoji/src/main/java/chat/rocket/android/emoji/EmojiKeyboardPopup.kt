@@ -1,4 +1,4 @@
-package chat.rocket.android.emoji
+package chat.dk.android.emoji
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -17,15 +17,17 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.edit
 import androidx.core.graphics.drawable.DrawableCompat
 import androidx.viewpager.widget.ViewPager
-import chat.rocket.android.emoji.internal.EmojiCategory
-import chat.rocket.android.emoji.internal.EmojiPagerAdapter
-import chat.rocket.android.emoji.internal.PREF_EMOJI_SKIN_TONE
+import chat.dk.android.emoji.internal.EmojiCategory
+import chat.dk.android.emoji.internal.EmojiPagerAdapter
+import chat.dk.android.emoji.internal.PREF_EMOJI_SKIN_TONE
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.dialog_skin_tone_chooser.view.*
 import kotlinx.coroutines.experimental.android.UI
 import kotlinx.coroutines.experimental.launch
 
+
 class EmojiKeyboardPopup(context: Context, view: View) : OverKeyboardPopupWindow(context, view) {
+
     private lateinit var viewPager: ViewPager
     private lateinit var tabLayout: TabLayout
     private lateinit var searchView: View
@@ -82,7 +84,7 @@ class EmojiKeyboardPopup(context: Context, view: View) : OverKeyboardPopupWindow
             .setCancelable(true)
             .create()
 
-        with(view) {
+        with (view) {
             image_view_default_tone.setOnClickListener {
                 dialog.dismiss()
                 changeSkinTone(Fitzpatrick.Default)
@@ -136,10 +138,7 @@ class EmojiKeyboardPopup(context: Context, view: View) : OverKeyboardPopupWindow
         return when (tone) {
             Fitzpatrick.Default -> ContextCompat.getColor(context, R.color.tone_default)
             Fitzpatrick.LightTone -> ContextCompat.getColor(context, R.color.tone_light)
-            Fitzpatrick.MediumLightTone -> ContextCompat.getColor(
-                context,
-                R.color.tone_medium_light
-            )
+            Fitzpatrick.MediumLightTone -> ContextCompat.getColor(context, R.color.tone_medium_light)
             Fitzpatrick.MediumTone -> ContextCompat.getColor(context, R.color.tone_medium)
             Fitzpatrick.MediumDarkTone -> ContextCompat.getColor(context, R.color.tone_medium_dark)
             Fitzpatrick.DarkTone -> ContextCompat.getColor(context, R.color.tone_dark)
@@ -152,7 +151,7 @@ class EmojiKeyboardPopup(context: Context, view: View) : OverKeyboardPopupWindow
                 is EmojiKeyboardListener -> it
                 else -> {
                     val fragments = (it as AppCompatActivity).supportFragmentManager.fragments
-                    if (fragments.size == 0 || fragments[0] !is EmojiKeyboardListener) {
+                    if (fragments.size == 0 || !(fragments[0] is EmojiKeyboardListener)) {
                         // Since the app can arrive in an inconsistent state at this point, do not throw
 //                        throw IllegalStateException("activity/fragment should implement Listener interface")
                         null
@@ -191,6 +190,7 @@ class EmojiKeyboardPopup(context: Context, view: View) : OverKeyboardPopupWindow
     }
 
     class EmojiTextWatcher(private val editor: EditText) : TextWatcher {
+
         @Volatile
         private var emojiToRemove = mutableListOf<EmojiTypefaceSpan>()
 

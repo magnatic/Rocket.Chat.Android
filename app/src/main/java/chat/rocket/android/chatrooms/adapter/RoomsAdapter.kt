@@ -1,10 +1,10 @@
-package chat.rocket.android.chatrooms.adapter
+package chat.dk.android.chatrooms.adapter
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import chat.rocket.android.R
-import chat.rocket.android.chatrooms.adapter.model.RoomUiModel
-import chat.rocket.android.util.extensions.inflate
+import chat.dk.android.R
+import chat.dk.android.chatrooms.adapter.model.RoomUiModel
+import chat.dk.android.util.extensions.inflate
 
 class RoomsAdapter(private val listener: (RoomUiModel) -> Unit) :
     RecyclerView.Adapter<ViewHolder<*>>() {

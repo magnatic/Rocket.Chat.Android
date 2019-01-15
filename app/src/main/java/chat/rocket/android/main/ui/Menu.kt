@@ -1,8 +1,8 @@
-package chat.rocket.android.main.ui
+package chat.dk.android.main.ui
 
 import android.view.Menu
 import android.view.MenuItem
-import chat.rocket.android.R
+import chat.dk.android.R
 
 internal fun MainActivity.setupMenu(menu: Menu) {
     with(menu) {

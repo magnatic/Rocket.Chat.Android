@@ -1,11 +1,11 @@
-package chat.rocket.android.pinnedmessages.presentation
+package chat.dk.android.pinnedmessages.presentation
 
-import chat.rocket.android.chatroom.uimodel.UiModelMapper
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.db.DatabaseManager
-import chat.rocket.android.server.infraestructure.RocketChatClientFactory
-import chat.rocket.android.util.extension.launchUI
-import chat.rocket.android.util.retryDB
+import chat.dk.android.chatroom.uimodel.UiModelMapper
+import chat.dk.android.core.lifecycle.CancelStrategy
+import chat.dk.android.db.DatabaseManager
+import chat.dk.android.server.infraestructure.RocketChatClientFactory
+import chat.dk.android.util.extension.launchUI
+import chat.dk.android.util.retryDB
 import chat.rocket.common.RocketChatException
 import chat.rocket.common.model.roomTypeOf
 import chat.rocket.common.util.ifNull

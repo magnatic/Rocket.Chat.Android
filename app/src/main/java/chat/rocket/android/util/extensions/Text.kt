@@ -1,4 +1,4 @@
-package chat.rocket.android.util.extensions
+package chat.dk.android.util.extensions
 
 import android.text.Spannable
 import android.text.Spanned
@@ -6,7 +6,7 @@ import android.text.TextUtils
 import android.util.Base64
 import android.util.Patterns
 import android.widget.TextView
-import chat.rocket.android.emoji.EmojiParser
+import chat.dk.android.emoji.EmojiParser
 import org.json.JSONObject
 import ru.noties.markwon.Markwon
 import java.net.URLDecoder

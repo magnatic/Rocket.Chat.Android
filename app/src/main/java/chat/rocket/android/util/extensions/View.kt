@@ -1,11 +1,11 @@
-package chat.rocket.android.util.extensions
+package chat.dk.android.util.extensions
 
 import android.net.Uri
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.core.content.res.ResourcesCompat
 import android.view.View
 import androidx.core.view.isVisible
-import chat.rocket.android.R
+import chat.dk.android.R
 import timber.log.Timber
 
 fun View.openTabbedUrl(url: String?) {

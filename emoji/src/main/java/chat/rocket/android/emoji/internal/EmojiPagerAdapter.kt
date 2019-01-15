@@ -1,4 +1,4 @@
-package chat.rocket.android.emoji.internal
+package chat.dk.android.emoji.internal
 
 import android.text.Spannable
 import android.view.LayoutInflater
@@ -8,12 +8,12 @@ import androidx.core.view.isVisible
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.PagerAdapter
-import chat.rocket.android.emoji.Emoji
-import chat.rocket.android.emoji.EmojiKeyboardListener
-import chat.rocket.android.emoji.EmojiParser
-import chat.rocket.android.emoji.EmojiRepository
-import chat.rocket.android.emoji.Fitzpatrick
-import chat.rocket.android.emoji.R
+import chat.dk.android.emoji.Emoji
+import chat.dk.android.emoji.EmojiKeyboardListener
+import chat.dk.android.emoji.EmojiParser
+import chat.dk.android.emoji.EmojiRepository
+import chat.dk.android.emoji.Fitzpatrick
+import chat.dk.android.emoji.R
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import kotlinx.android.synthetic.main.emoji_category_layout.view.*
 import kotlinx.android.synthetic.main.emoji_image_row_item.view.*

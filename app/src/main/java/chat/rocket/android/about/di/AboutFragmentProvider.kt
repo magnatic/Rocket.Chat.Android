@@ -1,6 +1,6 @@
-package chat.rocket.android.about.di
+package chat.dk.android.about.di
 
-import chat.rocket.android.about.ui.AboutFragment
+import chat.dk.android.about.ui.AboutFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

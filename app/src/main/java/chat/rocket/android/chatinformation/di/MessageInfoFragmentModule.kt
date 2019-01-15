@@ -1,10 +1,10 @@
-package chat.rocket.android.chatinformation.di
+package chat.dk.android.chatinformation.di
 
 import androidx.lifecycle.LifecycleOwner
-import chat.rocket.android.chatinformation.presentation.MessageInfoView
-import chat.rocket.android.chatinformation.ui.MessageInfoFragment
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.dagger.scope.PerFragment
+import chat.dk.android.chatinformation.presentation.MessageInfoView
+import chat.dk.android.chatinformation.ui.MessageInfoFragment
+import chat.dk.android.core.lifecycle.CancelStrategy
+import chat.dk.android.dagger.scope.PerFragment
 import dagger.Module
 import dagger.Provides
 import kotlinx.coroutines.experimental.Job

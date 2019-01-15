@@ -1,4 +1,4 @@
-package chat.rocket.android.helper
+package chat.dk.android.helper
 
 object Constants {
     const val CHATROOM_SORT_TYPE_KEY: String = "chatroom_sort_type"

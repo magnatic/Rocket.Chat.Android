@@ -1,4 +1,4 @@
-package chat.rocket.android.chatroom.uimodel
+package chat.dk.android.chatroom.uimodel
 
 data class ReactionUiModel(
     val messageId: String,

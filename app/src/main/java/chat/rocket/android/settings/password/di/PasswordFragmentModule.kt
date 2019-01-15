@@ -1,10 +1,10 @@
-package chat.rocket.android.settings.password.di
+package chat.dk.android.settings.password.di
 
 import androidx.lifecycle.LifecycleOwner
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.dagger.scope.PerFragment
-import chat.rocket.android.settings.password.presentation.PasswordView
-import chat.rocket.android.settings.password.ui.PasswordFragment
+import chat.dk.android.core.lifecycle.CancelStrategy
+import chat.dk.android.dagger.scope.PerFragment
+import chat.dk.android.settings.password.presentation.PasswordView
+import chat.dk.android.settings.password.ui.PasswordFragment
 import dagger.Module
 import dagger.Provides
 import kotlinx.coroutines.experimental.Job

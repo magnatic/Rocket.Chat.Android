@@ -2,8 +2,8 @@
 <resources>
 
     <!-- Main colors -->
-    <color name="colorPrimary">#FF2F343D</color>
-    <color name="colorPrimaryDark">#FF2F343D</color>
+    <color name="colorPrimary">#009600</color>
+    <color name="colorPrimaryDark">#006600</color>
     <color name="colorAccent">#FF1D74F5</color>
 
     <!-- Text colors -->
@@ -13,8 +13,6 @@
     <color name="colorTimestampText">#FF9DA2A9</color>
     <color name="colorTimestampTextUnread">#FF5699FF</color>
     <color name="colorLastMessageText">#99000000</color>
-    <color name="colorUserDetailsNameText">#FF0C0D0F</color>
-    <color name="colorUserDetailsUsernameText">#8B000000</color>
 
     <!-- User status colors -->
     <color name="colorUserStatusOnline">#2FE1A8</color>

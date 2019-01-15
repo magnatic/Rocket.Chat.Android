@@ -1,9 +1,9 @@
-package chat.rocket.android.server.infraestructure
+package chat.dk.android.server.infraestructure
 
 import android.content.SharedPreferences
 import androidx.core.content.edit
-import chat.rocket.android.server.domain.AccountsRepository
-import chat.rocket.android.server.domain.model.Account
+import chat.dk.android.server.domain.AccountsRepository
+import chat.dk.android.server.domain.model.Account
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.Types
 

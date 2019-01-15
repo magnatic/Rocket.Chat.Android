@@ -1,8 +1,8 @@
-package chat.rocket.android.chatdetails.viewmodel
+package chat.dk.android.chatdetails.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import chat.rocket.android.db.ChatRoomDao
+import chat.dk.android.db.ChatRoomDao
 import javax.inject.Inject
 
 class ChatDetailsViewModelFactory @Inject constructor(private val chatRoomDao: ChatRoomDao) : ViewModelProvider.NewInstanceFactory() {

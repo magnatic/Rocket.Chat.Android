@@ -1,12 +1,12 @@
-package chat.rocket.android.members.adapter
+package chat.dk.android.members.adapter
 
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import chat.rocket.android.R
-import chat.rocket.android.members.uimodel.MemberUiModel
-import chat.rocket.android.util.extensions.content
-import chat.rocket.android.util.extensions.inflate
+import chat.dk.android.R
+import chat.dk.android.members.uimodel.MemberUiModel
+import chat.dk.android.util.extensions.content
+import chat.dk.android.util.extensions.inflate
 import kotlinx.android.synthetic.main.avatar.view.*
 import kotlinx.android.synthetic.main.item_member.view.*
 

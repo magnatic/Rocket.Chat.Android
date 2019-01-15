@@ -1,22 +1,20 @@
-package chat.rocket.android.chatdetails.presentation
+package chat.dk.android.chatdetails.presentation
 
-import chat.rocket.android.chatdetails.domain.ChatDetails
-import chat.rocket.android.chatroom.presentation.ChatRoomNavigator
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.server.domain.GetCurrentServerInteractor
-import chat.rocket.android.server.infraestructure.ConnectionManagerFactory
-import chat.rocket.android.util.extension.launchUI
-import chat.rocket.android.util.retryIO
+import chat.dk.android.chatdetails.domain.ChatDetails
+import chat.dk.android.core.lifecycle.CancelStrategy
+import chat.dk.android.server.domain.GetCurrentServerInteractor
+import chat.dk.android.server.infraestructure.ConnectionManagerFactory
+import chat.dk.android.util.extension.launchUI
+import chat.dk.android.util.retryIO
 import chat.rocket.common.model.roomTypeOf
 import chat.rocket.common.util.ifNull
 import chat.rocket.core.internal.rest.getInfo
 import chat.rocket.core.model.Room
-import timber.log.Timber
 import javax.inject.Inject
 
 class ChatDetailsPresenter @Inject constructor(
     private val view: ChatDetailsView,
-    private val navigator: ChatRoomNavigator,
+    private val navigator: ChatDetailsNavigator,
     private val strategy: CancelStrategy,
     serverInteractor: GetCurrentServerInteractor,
     factory: ConnectionManagerFactory
@@ -31,11 +29,11 @@ class ChatDetailsPresenter @Inject constructor(
                 val room = retryIO("getInfo($chatRoomId, null, $chatRoomType") {
                     client.getInfo(chatRoomId, null, roomTypeOf(chatRoomType))
                 }
+
                 view.displayDetails(roomToChatDetails(room))
-            } catch(exception: Exception) {
-                Timber.e(exception)
-                exception.message?.let {
-                    view.showMessage(it)
+            } catch(e: Exception) {
+                e.message.let {
+                    view.showMessage(it!!)
                 }.ifNull {
                     view.showGenericErrorMessage()
                 }

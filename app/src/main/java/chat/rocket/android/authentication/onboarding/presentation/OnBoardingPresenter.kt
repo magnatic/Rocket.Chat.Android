@@ -1,15 +1,15 @@
-package chat.rocket.android.authentication.onboarding.presentation
+package chat.dk.android.authentication.onboarding.presentation
 
-import chat.rocket.android.authentication.presentation.AuthenticationNavigator
-import chat.rocket.android.core.behaviours.showMessage
-import chat.rocket.android.core.lifecycle.CancelStrategy
-import chat.rocket.android.server.domain.GetAccountsInteractor
-import chat.rocket.android.server.domain.GetSettingsInteractor
-import chat.rocket.android.server.domain.RefreshSettingsInteractor
-import chat.rocket.android.server.domain.SaveConnectingServerInteractor
-import chat.rocket.android.server.infraestructure.RocketChatClientFactory
-import chat.rocket.android.server.presentation.CheckServerPresenter
-import chat.rocket.android.util.extension.launchUI
+import chat.dk.android.authentication.presentation.AuthenticationNavigator
+import chat.dk.android.core.behaviours.showMessage
+import chat.dk.android.core.lifecycle.CancelStrategy
+import chat.dk.android.server.domain.GetAccountsInteractor
+import chat.dk.android.server.domain.GetSettingsInteractor
+import chat.dk.android.server.domain.RefreshSettingsInteractor
+import chat.dk.android.server.domain.SaveConnectingServerInteractor
+import chat.dk.android.server.infraestructure.RocketChatClientFactory
+import chat.dk.android.server.presentation.CheckServerPresenter
+import chat.dk.android.util.extension.launchUI
 import kotlinx.coroutines.experimental.DefaultDispatcher
 import kotlinx.coroutines.experimental.withContext
 import javax.inject.Inject

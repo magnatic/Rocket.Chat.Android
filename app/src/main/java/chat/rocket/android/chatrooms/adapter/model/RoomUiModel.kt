@@ -1,4 +1,4 @@
-package chat.rocket.android.chatrooms.adapter.model
+package chat.dk.android.chatrooms.adapter.model
 
 import chat.rocket.common.model.RoomType
 import chat.rocket.common.model.UserStatus

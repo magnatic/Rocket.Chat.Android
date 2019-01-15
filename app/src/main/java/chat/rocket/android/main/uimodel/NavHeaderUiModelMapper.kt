@@ -1,8 +1,8 @@
-package chat.rocket.android.main.uimodel
+package chat.dk.android.main.uimodel
 
-import chat.rocket.android.server.domain.*
-import chat.rocket.android.util.extensions.avatarUrl
-import chat.rocket.android.util.extensions.serverLogoUrl
+import chat.dk.android.server.domain.*
+import chat.dk.android.util.extensions.avatarUrl
+import chat.dk.android.util.extensions.serverLogoUrl
 import chat.rocket.core.model.Myself
 import javax.inject.Inject
 

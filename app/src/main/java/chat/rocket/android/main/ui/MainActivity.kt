@@ -1,8 +1,8 @@
-package chat.rocket.android.main.ui
+package chat.dk.android.main.ui
 
 import DrawableHelper
 import android.app.Activity
-import androidx.appcompat.app.AlertDialog
+import android.app.AlertDialog
 import android.app.ProgressDialog
 import android.os.Bundle
 import androidx.annotation.IdRes
@@ -11,22 +11,22 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import chat.rocket.android.BuildConfig
-import chat.rocket.android.R
-import chat.rocket.android.main.adapter.AccountsAdapter
-import chat.rocket.android.main.adapter.Selector
-import chat.rocket.android.main.presentation.MainPresenter
-import chat.rocket.android.main.presentation.MainView
-import chat.rocket.android.main.uimodel.NavHeaderUiModel
-import chat.rocket.android.push.refreshPushToken
-import chat.rocket.android.server.domain.PermissionsInteractor
-import chat.rocket.android.server.domain.model.Account
-import chat.rocket.android.server.ui.INTENT_CHAT_ROOM_ID
-import chat.rocket.android.util.extensions.fadeIn
-import chat.rocket.android.util.extensions.fadeOut
-import chat.rocket.android.util.extensions.rotateBy
-import chat.rocket.android.util.extensions.showToast
-import chat.rocket.android.util.invalidateFirebaseToken
+import chat.dk.android.BuildConfig
+import chat.dk.android.R
+import chat.dk.android.main.adapter.AccountsAdapter
+import chat.dk.android.main.adapter.Selector
+import chat.dk.android.main.presentation.MainPresenter
+import chat.dk.android.main.presentation.MainView
+import chat.dk.android.main.uimodel.NavHeaderUiModel
+import chat.dk.android.push.refreshPushToken
+import chat.dk.android.server.domain.PermissionsInteractor
+import chat.dk.android.server.domain.model.Account
+import chat.dk.android.server.ui.INTENT_CHAT_ROOM_ID
+import chat.dk.android.util.extensions.fadeIn
+import chat.dk.android.util.extensions.fadeOut
+import chat.dk.android.util.extensions.rotateBy
+import chat.dk.android.util.extensions.showToast
+import chat.dk.android.util.invalidateFirebaseToken
 import chat.rocket.common.model.UserStatus
 import dagger.android.AndroidInjection
 import dagger.android.AndroidInjector
@@ -125,9 +125,6 @@ class MainActivity : AppCompatActivity(), MainView, HasActivityInjector,
                 }
                 if (userAvatar != null) {
                     setAvatar(userAvatar)
-                }
-                if (serverLogo != null) {
-                    server_logo.setImageURI(serverLogo)
                 }
                 text_server_url.text = uiModel.serverUrl
             }
